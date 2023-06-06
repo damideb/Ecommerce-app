@@ -1,7 +1,7 @@
 
 import React, {useState,useEffect} from "react";
 
-const context =React.createContext()
+const Context =React.createContext()
 
 function ContextProvider (props){
 
@@ -14,10 +14,10 @@ const url = "https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-
             .then(data => setAllPhotos(data))
     }, [])
     return(
-        <context.Provider value={{allPhotos}}>
+        <Context.Provider value={{allPhotos}}>
             {props.children}
-        </context.Provider>
+        </Context.Provider>
     )
 }
 
-export {ContextProvider, context}
+export {ContextProvider, Context}
