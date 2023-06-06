@@ -8,7 +8,8 @@ import App from "./App"
 
 
 
-createRoot(document.getElementById('root')).render(<ContextProvider>
+createRoot(document.getElementById('root')).render(
+<ContextProvider>
     <Router>
         <App />
     </Router>
