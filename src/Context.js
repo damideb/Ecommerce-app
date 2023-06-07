@@ -13,8 +13,16 @@ const url = "https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-
             .then(res => res.json())
             .then(data => setAllPhotos(data))
     }, [])
+
+    function toggleFavorite(id){
+        const updatedArray = allPhotos.map(photo=>(
+            photo.id = id? {...photo, isFavorite:!photo.isFavorite}: photo
+        ))
+        setAllPhotos(updatedArray)
+    }
+
     return(
-        <Context.Provider value={{allPhotos}}>
+        <Context.Provider value={{allPhotos,toggleFavorite}}>
             {props.children}
         </Context.Provider>
     )
