@@ -36,8 +36,12 @@ const url = "https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-
         setCartItems(prevItems => prevItems.filter(item => item.id !== id))
     }
 
+    function emptyCart() {
+        setCartItems([])
+    }
+    
     return(
-        <Context.Provider value={{allPhotos,toggleFavorite, removeFromCart,addToCart, cartItems}}>
+        <Context.Provider value={{allPhotos,toggleFavorite, removeFromCart,addToCart, cartItems, emptyCart}}>
             {props.children}
         </Context.Provider>
     )
