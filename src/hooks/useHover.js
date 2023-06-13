@@ -4,6 +4,10 @@ function useHover(){
 
 const[hovered, setHovered] = useState(false)
 
+useEffect(()=>{
+    
+})
+
 }
 
 export default useHover
