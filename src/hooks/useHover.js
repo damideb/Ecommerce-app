@@ -13,10 +13,20 @@ function leave(){
 }
 
 useEffect(()=>{
-    
+    var Reference= ref.current 
     ref.current.addEventListener(onmouseenter, enter)
-})
+    ref.current.addEventListener(onmouseleave, leave)
 
-}
+    return () => {   
+       
+        Reference.removeEventListener("mouseenter", enter)
+        Reference.removeEventListener("mouseleave", leave)
+    }
+}, []
+)
+
+return(
+[hovered,  ref]
+)}
 
 export default useHover
