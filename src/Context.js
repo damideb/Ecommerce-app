@@ -1,5 +1,6 @@
 
 import React, {useState,useEffect} from "react";
+import data from './Data';
 
 const Context =React.createContext()
 
