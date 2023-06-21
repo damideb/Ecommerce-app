@@ -15,10 +15,11 @@ html, body {
 main.photos {
     padding: 10px;
     display: grid;
-    grid-gap: 2px;
-    grid-auto-rows: 100px;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 10px;
+    grid-auto-rows: 300px;
+    grid-template-columns: repeat(4, minmax(150px, 2fr));
     grid-auto-flow: dense;
+    
 }
 
 main.cart-page {
@@ -28,6 +29,8 @@ main.cart-page {
 .cart-page > h1 {
     text-align: center;
 }
+
+
 
 .cart-page .total-cost {
     text-align: right;
@@ -66,10 +69,19 @@ div.order-button > button:disabled {
     margin-left: 10px;   
 }
 
-img.image-grid {
-    width: 100%;
-    height: 100%;
+.image-grid {
+    border-radius: 5px;
+    box-shadow: 15px 10px rgba(255, 255, 255, 0.772);
+    width: 90%;
+    height: 87%;
     object-fit: cover;
+}
+.priceList{
+    position: absolute;
+    top:250px ;
+    padding-top: 0px;
+   left:30px;
+   font-size:0.7rem
 }
 
 .image-container {
@@ -99,22 +111,11 @@ img.image-grid {
     font-size: 1.2rem;
     position: absolute;
     top: 5px;
-    right: 5px;
+    right: 30px;
     cursor: pointer;
 }
  
-.wide {
-    grid-column: span 2;
-}
 
-.tall {
-    grid-row: span 2;
-}
-
-.big {
-    grid-column: span 2;
-    grid-row: span 2;
-}
 
 header {
     display: flex;
@@ -122,11 +123,23 @@ header {
     align-items: center;
     background-color: var(--pink);
     color: var(--light-blue);
-    padding: 0 10px;
+    padding: 0px 10px;
     -webkit-box-shadow: 0px 2px 10px -5px rgba(21,6,5,1);
     -moz-box-shadow: 0px 2px 10px -5px rgba(21,6,5,1);
     box-shadow: 0px 2px 10px -5px rgba(21,6,5,1);
 }
+
+
+.cart-sign{
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    margin: 0;
+    padding: 2px;
+    font-size: 22px;
+  
+}
+
 
 a {
     text-decoration: none;

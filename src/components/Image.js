@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import useHover from "../hooks/useHover"
    
 
-function Image({className, img}) {
+function Image({img}) {
     const [hovered, ref] = useHover()
  
     const {toggleFavorite, cartItems, addToCart,removeFromCart} = useContext(Context)
@@ -29,12 +29,11 @@ function Image({className, img}) {
     
 
     return (
-        <div className={`${className} image-container`}
-      ref={ref}>
+        <div className="image-container" ref={ref}>
             <img src={img.url} alt = 'Products' className="image-grid"/>
           {heartIcon()}
             {cartIcon ()}
-        
+            <p class='priceList'> ${img.price}</p>
         </div>
     )
 }
