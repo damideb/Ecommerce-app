@@ -10,12 +10,8 @@ const [allPhotos, setAllPhotos] = useState([])
 const[cartItems, setCartItems] = useState([])
 
 
-
-const url = "https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json"
     useEffect(() => {
-        fetch(url)
-            .then(res => res.json())
-            .then(data => setAllPhotos(data))
+        setAllPhotos(data)
     }, [])
 
     function toggleFavorite(id) {
