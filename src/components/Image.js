@@ -1,4 +1,5 @@
 import React,{useContext} from "react"
+import {Link} from "react-router-dom"
 import {Context} from "../Context"
 import PropTypes from "prop-types"
 import useHover from "../hooks/useHover"
@@ -30,10 +31,16 @@ function Image({img}) {
 
     return (
         <div className="image-container" ref={ref}>
-            <img src={img.url} alt = 'Products' className="image-grid"/>
+            <Link to= {`./item/${img.id}`}><img src={img.url} alt = 'Products' className="image-grid"/></Link>
           {heartIcon()}
             {cartIcon ()}
-            <p class='priceList'> ${img.price}</p>
+            <div className="imageText">
+                <p className='priceList'> ${img.price}</p>
+            <span className='rating'> 
+           {img.ratings} <i className="ri-star-fill"></i></span>
+            </div>
+            
+                
         </div>
     )
 }
