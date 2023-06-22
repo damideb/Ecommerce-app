@@ -77,7 +77,7 @@ div.order-button > button:disabled {
     -moz-box-shadow: rgba(0, 0, 0, 4) 0px 5px 4px;
     box-shadow:  rgba(0, 0, 0, 4) 0px 5px 4px;
     width: 90%;
-    height: 87%;
+    height: 85%;
     object-fit: cover;
     cursor: pointer
 }
@@ -108,9 +108,9 @@ div.order-button > button:disabled {
     border-radius: 0 0 5px 5px;
     margin-top: 0;
     padding-top: 0;
-background-color: var(--red);
-width: 90%;
-height: 7%;
+    background-color: var(--red);
+    width: 90%;
+    height: 7%;
 
 }
 
@@ -164,6 +164,15 @@ header {
     padding: 2px;
     font-size: 22px;
   
+}
+
+.bagItem{
+    width:30%;
+    height: 370px;
+    object-fit: cover;
+    margin-right: auto;
+    margin-left: 35%;  
+    border-radius: 7px;
 }
 
 
