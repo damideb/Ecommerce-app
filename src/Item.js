@@ -17,7 +17,7 @@ navigate('/')
             <h3>Product Information</h3>
             <p 
             className="arrow"
-            onClick={handleClick}><span> <i className="ri-arrow-go-back-line" ></i></span>Go back to homePage</p>
+            onClick={handleClick}><span> <i className="ri-arrow-go-back-line" ></i></span>Go back</p>
            <img  src={bagItem.url}  alt='' className="bagItem"/>
            <p>${bagItem.price}</p>
            <button>Add to Cart</button>
