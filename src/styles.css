@@ -168,14 +168,50 @@ header {
 
 .bagItem{
     width:30%;
-    height: 370px;
+    height: 380px;
     object-fit: cover;
     margin-right: auto;
-    margin-left: 5%;  
-    border-radius: 7px;
+    margin-left: 3%;
+    margin-top: 4%;  
+    border-radius: 5px;
+    
 }
-.arrow{
+
+.bagRating{
+    position: absolute;
     cursor: pointer;
+    left: 55%;
+   top: 26%; 
+}
+
+.arrow{
+    position: absolute;
+    cursor: pointer;
+    left: 35%;
+   top: 22%;
+   padding-top: 5px;
+   padding-left: 3px;
+   width: 6%;
+   height: 6%;
+   border: 1px solid black;
+}
+.bagPrice{
+    position: absolute;
+    left: 35%;
+    top: 50%;
+     border-bottom: 1.5px dotted black;
+     padding-left: 10%;
+     padding-bottom: 5px;
+     width: 20%;
+}
+
+.cartButton{
+    position: absolute;
+    cursor: pointer;
+    left: 50%;
+   top: 75%;
+   width: 15%;
+   height: 30px;
 }
 
 

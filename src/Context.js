@@ -27,10 +27,12 @@ const[cartItems, setCartItems] = useState([])
 
     function addToCart(newItem) {
         setCartItems(prevItems => [...prevItems, newItem])
+   
     }
     
     function removeFromCart(id) {
         setCartItems(prevItems => prevItems.filter(item => item.id !== id))
+      
     }
 
     function emptyCart() {

@@ -37,7 +37,7 @@ function Image({img}) {
             <div className="imageText">
                 <p className='priceList'> ${img.price}</p>
             <span className='rating'> 
-           {img.ratings} <i className="ri-star-fill"></i></span>
+           {img.ratings} <i className="ri-star-half-fill"></i></span>
             </div>
             
                 

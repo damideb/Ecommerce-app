@@ -16,6 +16,8 @@ function Cart() {
             setButtonText("Place Order")
             emptyCart()
         }, 3000)
+    
+    
     }
 
     const cartItemElements = cartItems.map(item => (
@@ -31,6 +33,7 @@ function Cart() {
                 cartItems.length > 0 ?
                 <div className="order-button">
                     <button onClick={placeOrder}>{buttonText}</button>
+          
                 </div> :
                 <p>You have no items in your cart.</p>
             }
