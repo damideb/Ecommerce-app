@@ -3,38 +3,40 @@ import {Context} from "../Context"
 import CartItem from "../components/CartItem"
 
 
-function Cart() {
+    function Cart() {
     const [buttonText, setButtonText] = useState("Place Order");
     const[orderPlaced, setOrderPlaced] = useState(false)
-  
     const {cartItems, emptyCart} = useContext(Context)
-    const totalCost = 5.99 * cartItems.length
-    const totalCostDisplay = totalCost.toLocaleString("en-US", {style: "currency", currency: "USD"})
+ 
+    const cartItemPrice = cartItems.map(item=> ( 
+    item.price ))
+
+    var priceSum = cartItemPrice.reduce(
+        function(total, amount){
+        return total + amount
+    },0)
+
+    const totalCostDisplay = priceSum.toLocaleString("en-US", {style: "currency", currency: "USD"})
+
+    const cartItemElements = cartItems.map(item => (
+        <CartItem key={item.id} item={item} />
+    )) 
 
     function placeOrder() {
         setButtonText("Ordering...")
-
         setTimeout(() => {
             setOrderPlaced(true)
             setTimeout( ()=>{
                 setButtonText("Place Order")
                 setOrderPlaced(false)
                 emptyCart()
-            }, 2500)}
-       , 3000
-       )
-    
-    }
+            }, 1000)}
+       , 2000
+       )}
 
-
-
-    const cartItemElements = cartItems.map(item => (
-        <CartItem key={item.id} item={item} />
-    )) 
 
     return (
         <main className="cart-page">
-         
            <h2> {orderPlaced? "Order Placed successfully!" : "Check out"}</h2>
           
             {cartItemElements} 
