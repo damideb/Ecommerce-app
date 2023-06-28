@@ -47,7 +47,10 @@ import CartItem from "../components/CartItem"
                     <button onClick={placeOrder}>{buttonText}</button>
         
                 </div> :
+                <div>
                 <p>You have no items in your cart.</p>
+            <i> Go to home page to add items to cart</i>
+            </div>
             }
 
             

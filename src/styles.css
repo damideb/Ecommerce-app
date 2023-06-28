@@ -1,7 +1,7 @@
 :root {
     --black: #150605;
-    --red: #EA453C;
-    --pink: #F47B6E;
+    --red: #C38154;
+    --brown: #3F2305;
     --light-blue: #EFFBFE;
     --blue: #ACE6EC;
 }
@@ -10,6 +10,7 @@ html, body {
     font-family: 'Oswald', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #F5F5F5;
   
 }
 
@@ -69,9 +70,13 @@ div.order-button > button:disabled {
     margin-right: auto;
     margin-left: 10px;   
 }
+CartItem > i{
+    margin-left: 30%;
+    font-size: 13px;
+}
 
 .image-grid {
-    border-radius: 5px 5px 0px 0;
+    border-radius: 3.5px 3.5px 0px 0;
     -moz-border-radius:5px;
     -webkit-box-shadow: rgba(0, 0, 0, 4) 0px 5px 4px;
     -moz-box-shadow: rgba(0, 0, 0, 4) 0px 5px 4px;
@@ -90,7 +95,7 @@ div.order-button > button:disabled {
     position: absolute;
     font-weight: bold;
     font-size: 30px;
-    top:255px ;
+    top:252px ;
     padding-top: 0px;
    left:30px;
    font-size:0.7rem
@@ -99,12 +104,13 @@ div.order-button > button:disabled {
 .rating{
     position: absolute;
     font-size: 30px;
-    top:266px ;
+    top:265px ;
     padding-top: 0px;
    left:120px;
    font-size:0.7rem
 }
 .imageText{
+    color: #FFD89C;
     border-radius: 0 0 5px 5px;
     margin-top: 0;
     padding-top: 0;
@@ -133,7 +139,7 @@ div.order-button > button:disabled {
 }
 
 .cart {
-    color: var(--pink);
+    color: var(--red);
     font-size: 1.2rem;
     position: absolute;
     top: 5px;
@@ -147,7 +153,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--pink);
+    background-color: var(--brown);
     color: var(--light-blue);
     padding: 0px 10px;
     -webkit-box-shadow: 0px 2px 10px -5px rgba(21,6,5,1);

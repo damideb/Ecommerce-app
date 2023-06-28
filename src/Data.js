@@ -98,7 +98,7 @@ const data= [
 
     },
     {
-       url: "https://lh3.googleusercontent.com/pw/AJFCJaUrTDFlq0KXud7aXgyq6bwWP7H-u2el8zykiDBw-TOSKbcS7pwF0JCEQTlbdJs2vJ0QUgL3tyt94GwUrE_30l46tBoa8IF2HusDgFIqHeOoxg2Zc0OUQmB6_ALoC8iy8a1uBFI-BKt0h6W7C9YIxR99=w893-h597-s-no?authuser=0",
+       url: "https://lh3.googleusercontent.com/pw/AJFCJaVP9XugWAOsmbIZMaIeIgijAb6PC6WjHXfAkYdrU9IpBExyCny23z-n_JuTSBdBqYGsfa5nxnuKWiV6zcV9XH4Rb0HBR7YpiRMGRWXNI-0TEBQMrxlr2sJHYDg0mkIrwKKSOk13NQkSdvIR1HPUi3_H=w866-h581-s-no?authuser=0",
         id: "13",
         isFavorite: false,
         price: 400,
@@ -114,7 +114,7 @@ const data= [
 
     },
     {
-        url: "https://lh3.googleusercontent.com/pw/AJFCJaXVnRbQZE0BJBcsymlBX5ycX8w05ODc6s29pEy9mxL3JEppu1GxteGPYpo6RsUYE_Us0ubismmPD6vnonhbHfQ9RlIa8uhKsJIhQX88mic-S5KQ50Wh0ncbe5J9VI8AcIOVneadNNUSsQDp3hUm-NRT=w887-h864-s-no?authuser=0",
+        url: "https://lh3.googleusercontent.com/pw/AJFCJaWuIP7OGBA22YL_BiCTGjJgrI5p2iWw3gMl5eUAz6aqj_-gofctzb43JI3IfKUGa_1HRbNQXHpDQ7JW5phaAGIDsaZLjF8G48ZdKNIcUZJEbgt45lqmB2Y2ZAdoX92GL0lNXCHJTl5zME68lu9DDT7I=w837-h825-s-no?authuser=0",
         id: "15",
         isFavorite: false,
         price: 300,
@@ -122,7 +122,7 @@ const data= [
 
     },
     {
-        url: "https://lh3.googleusercontent.com/pw/AJFCJaXa6RK8sMcEFNp3ScgK31WNeNeQxuN9wDew1DQMQ88vCyFqRnS7N2AiCgcAl1PbIdW3Jfc5gZ6PQB-QFshB1WL6VZtaA3aMX2g7_D4hnLq-8ozDPeNtD6zhWYd9BosCBb9nIF-XPcjcBbzhybtRrnqV=w1188-h869-s-no?authuser=0",
+        url: "https://lh3.googleusercontent.com/pw/AJFCJaV_7wwJK5Kwl6ORvZRdIDaG9WL5TU4g8Y935D45iQpOUqyF6rJzpJVBeu-FmbgYb8MAxFdc5mIul9TG64zeBU9NYEyj134ZmTiS_ErOCMynaMDwdOFsgXQx88f29G1SLqkSJFVA6AjOIfwDde7SqdUp=w1160-h854-s-no?authuser=0",
         id: "16",
         isFavorite: false,
         price: 260,
@@ -146,7 +146,7 @@ const data= [
 
     },
     {
-        url: "https://lh3.googleusercontent.com/pw/AJFCJaVKeOobWbNqgYLD7NGeTnDcZREUtBOQFufmxjM4vp_eFYw7ziIjW-hM2Yp8erOqHM-t2zUhMmy-tMfV7BL1zyJDHAagi7d1oqnDva-jV06448rnj5iIEWXe5QjvNgY505cNsYoTbEDNWZZqnTgZGB1B=w1016-h886-s-no?authuser=0",
+        url: "https://lh3.googleusercontent.com/pw/AJFCJaWCBsVTnl3Mu6OG_THUawaAZhwawRlk-T8aLtpayJW6oYOxezr6GbzdsqRodew66gpjuHVLVdpjiPAKeoljsKUvJDCfLroI_EsrV4bhD36t0aQ0WkJdAeySZE3T0eQKrUrcZ9BfTqNdV-ijQQZu8A1M=w1006-h850-s-no?authuser=0",
         id: "19",
         isFavorite: false,
         price: 190,
@@ -154,7 +154,7 @@ const data= [
 
     },
     {
-        url: "https://lh3.googleusercontent.com/pw/AJFCJaXVnRbQZE0BJBcsymlBX5ycX8w05ODc6s29pEy9mxL3JEppu1GxteGPYpo6RsUYE_Us0ubismmPD6vnonhbHfQ9RlIa8uhKsJIhQX88mic-S5KQ50Wh0ncbe5J9VI8AcIOVneadNNUSsQDp3hUm-NRT=w887-h864-s-no?authuser=0",
+        url: "https://lh3.googleusercontent.com/pw/AJFCJaVZRxgEzHsFuzqWGbPT8Oofa0x98ODuVpBP6t75Bb24oDMM9zY0jOOaK6QF5_EvI30-HbXznNkzTscu4easoLflCdHmsvObmZkSGr8v-r46Z6y9SYvZovkA_kwalc8jmMs7RpPz9VbKeQStXdnvEW1M=w893-h886-s-no?authuser=0",
         id: "20",
         isFavorite: false,
         price: 500,
