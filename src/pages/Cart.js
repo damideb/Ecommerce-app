@@ -4,21 +4,29 @@ import CartItem from "../components/CartItem"
 
 
 function Cart() {
-    const [buttonText, setButtonText] = useState("Place Order")
+    const [buttonText, setButtonText] = useState("Place Order");
+    const[orderPlaced, setOrderPlaced] = useState(false)
+  
     const {cartItems, emptyCart} = useContext(Context)
     const totalCost = 5.99 * cartItems.length
     const totalCostDisplay = totalCost.toLocaleString("en-US", {style: "currency", currency: "USD"})
 
     function placeOrder() {
         setButtonText("Ordering...")
+
         setTimeout(() => {
-            console.log("Order placed!")
-            setButtonText("Place Order")
-            emptyCart()
-        }, 3000)
-    
+            setOrderPlaced(true)
+            setTimeout( ()=>{
+                setButtonText("Place Order")
+                setOrderPlaced(false)
+                emptyCart()
+            }, 2500)}
+       , 3000
+       )
     
     }
+
+
 
     const cartItemElements = cartItems.map(item => (
         <CartItem key={item.id} item={item} />
@@ -26,17 +34,23 @@ function Cart() {
 
     return (
         <main className="cart-page">
-            <h1>Check out</h1>
-            {cartItemElements}
+         
+           <h2> {orderPlaced? "Order Placed successfully!" : "Check out"}</h2>
+          
+            {cartItemElements} 
             <p className="total-cost">Total: {totalCostDisplay}</p>
             {
                 cartItems.length > 0 ?
                 <div className="order-button">
                     <button onClick={placeOrder}>{buttonText}</button>
-          
+        
                 </div> :
                 <p>You have no items in your cart.</p>
             }
+
+            
+           
+           
         </main>
     )
 }
