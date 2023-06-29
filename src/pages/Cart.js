@@ -9,7 +9,7 @@ import CartItem from "../components/CartItem"
     const {cartItems, emptyCart} = useContext(Context)
  
     const cartItemPrice = cartItems.map(item=> ( 
-    item.price ))
+    item.price*item.quantity ))
 
     var priceSum = cartItemPrice.reduce(
         function(total, amount){
@@ -38,7 +38,7 @@ import CartItem from "../components/CartItem"
     return (
         <main className="cart-page">
            <h2> {orderPlaced? "Order Placed successfully!" : "Check out"}</h2>
-          
+           <h6>Qty</h6>
             {cartItemElements} 
             <p className="total-cost">Total: {totalCostDisplay}</p>
             {
@@ -49,7 +49,7 @@ import CartItem from "../components/CartItem"
                 </div> :
                 <div>
                 <p>You have no items in your cart.</p>
-            <i> Go to home page to add items to cart</i>
+            <i className="goHomeText"> Go to home page to add items to cart</i>
             </div>
             }
 

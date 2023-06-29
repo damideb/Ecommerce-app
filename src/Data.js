@@ -5,7 +5,8 @@ const data= [
         id: "1",
         isFavorite: false,
         price: 1900,
-        ratings: 4.5
+        ratings: 4.5,
+        quantity:1
 
     },
 
@@ -14,7 +15,8 @@ const data= [
         id: "2",
         isFavorite: false,
         price: 450,
-        ratings: 3.9
+        ratings: 3.9,
+        quantity:1
 
     },
     {
@@ -22,7 +24,8 @@ const data= [
         id: "3",
         isFavorite: false,
         price: 5000,
-        ratings: 5
+        ratings: 5,
+        quantity:1
 
     },
     {
@@ -30,7 +33,8 @@ const data= [
         id: "4",
         isFavorite: false,
         price: 150,
-        ratings:3.4
+        ratings:3.4,
+        quantity:1
 
     },
     {
@@ -38,7 +42,8 @@ const data= [
         id: "5",
         isFavorite: false,
         price: 500,
-        ratings: 3.9
+        ratings: 3.9,
+        quantity:1
 
     },
     {
@@ -46,7 +51,8 @@ const data= [
         id: "6",
         isFavorite: false,
         price:  900,
-        ratings: 4.2
+        ratings: 4.2,
+        quantity:1
 
     },
     {
@@ -54,7 +60,8 @@ const data= [
         id: "7",
         isFavorite: false,
         price: 130,
-        ratings: 5
+        ratings: 5,
+        quantity:1
 
     },
     {
@@ -62,7 +69,8 @@ const data= [
         id: "8",
         isFavorite: false,
         price: 200,
-        ratings: 3
+        ratings: 3,
+        quantity:1
 
     },
     {
@@ -70,7 +78,8 @@ const data= [
         id:"9",
         isFavorite: false,
         price: 600,
-        ratings: 4.8
+        ratings: 4.8,
+        quantity:1
 
     },
     {
@@ -78,7 +87,8 @@ const data= [
         id: "10",
         isFavorite: false,
         price: 120,
-        ratings: 3.5
+        ratings: 3.5,
+        quantity:1
 
     },
     {
@@ -86,7 +96,8 @@ const data= [
         id: "11",
         isFavorite: false,
         price: 700,
-        ratings: 4.9
+        ratings: 4.9,
+        quantity:1
 
     },
     {
@@ -94,15 +105,16 @@ const data= [
         id: "12",
         isFavorite: false,
         price: 220,
-        ratings: 3.3
-
+        ratings: 3.3,
+        quantity:1
     },
     {
        url: "https://lh3.googleusercontent.com/pw/AJFCJaVP9XugWAOsmbIZMaIeIgijAb6PC6WjHXfAkYdrU9IpBExyCny23z-n_JuTSBdBqYGsfa5nxnuKWiV6zcV9XH4Rb0HBR7YpiRMGRWXNI-0TEBQMrxlr2sJHYDg0mkIrwKKSOk13NQkSdvIR1HPUi3_H=w866-h581-s-no?authuser=0",
         id: "13",
         isFavorite: false,
         price: 400,
-        ratings: 4.5
+        ratings: 4.5,
+        quantity:1
 
     },
     {
@@ -110,7 +122,8 @@ const data= [
         id: "14",
         isFavorite: false,
         price: 205,
-        ratings: 4.2
+        ratings: 4.2,
+        quantity:1
 
     },
     {
@@ -118,7 +131,8 @@ const data= [
         id: "15",
         isFavorite: false,
         price: 300,
-        ratings: 4.6
+        ratings: 4.6,
+        quantity:1
 
     },
     {
@@ -126,7 +140,8 @@ const data= [
         id: "16",
         isFavorite: false,
         price: 260,
-        ratings: 4
+        ratings: 4,
+        quantity:1
 
     },
     {
@@ -134,7 +149,8 @@ const data= [
         id: "17",
         isFavorite: false,
         price: 350,
-        ratings: 3.1
+        ratings: 3.1,
+        quantity:1
 
     },
     {
@@ -142,7 +158,8 @@ const data= [
         id: "18",
         isFavorite: false,
         price: 300,
-        ratings: 4.5
+        ratings: 4.5,
+        quantity:1
 
     },
     {
@@ -150,7 +167,8 @@ const data= [
         id: "19",
         isFavorite: false,
         price: 190,
-        ratings: 5
+        ratings: 5,
+        quantity:1
 
     },
     {
@@ -158,7 +176,8 @@ const data= [
         id: "20",
         isFavorite: false,
         price: 500,
-        ratings: 4.1
+        ratings: 4.1,
+        quantity:1
 
     }
     

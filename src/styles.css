@@ -15,6 +15,7 @@ html, body {
 }
 
 main.photos {
+    margin-top: 2.5%;
     padding: 10px;
     display: grid;
     grid-gap: 5px;
@@ -31,6 +32,10 @@ main.cart-page {
 .cart-page > h2 {
     text-align: center;
 }
+.cart-page > h6 {
+    margin-left: 70%;
+}
+
 
 
 
@@ -66,11 +71,15 @@ div.order-button > button:disabled {
     margin: 20px 0;
 }
 
+.quantityFigure{
+    margin-right: 26%;
+}
+
 .cart-item img {
     margin-right: auto;
     margin-left: 10px;   
 }
-CartItem > i{
+ .goHomeText{
     margin-left: 30%;
     font-size: 13px;
 }
@@ -211,6 +220,28 @@ header {
      width: 20%;
 }
 
+.quantity{
+    position: absolute;
+    left: 35%;
+    top: 62%;
+    display: flex;
+    gap:10px;
+display: flex;
+align-items: center;
+width: 90%;
+gap:10px;
+height: 20px;
+padding: 5px;
+padding-bottom: 20px;
+
+}
+.plus, .minus{
+    cursor: pointer;
+    padding: 0  15px 2px 15px ;
+    background-color:#F2EAD3;
+    font-size: 1.5rem;
+}
+
 .cartButton{
     position: absolute;
     cursor: pointer;
@@ -219,6 +250,7 @@ header {
    width: 15%;
    height: 30px;
 }
+
 
 
 a {

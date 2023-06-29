@@ -16,7 +16,8 @@ function CartItem({item}) {
            ref={ref}
             ></i>
             <img src={item.url} alt="" width="130px" />
-            <p>${item.price}</p>
+        <small className="quantityFigure">{item.quantity}</small>
+            <p>${item.price* item.quantity}</p>
         </div>
     )
 }

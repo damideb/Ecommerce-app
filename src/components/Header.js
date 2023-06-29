@@ -11,7 +11,7 @@ function Header() {
             <Link to="/"><h2>Home</h2></Link>
             <div className='cart-sign'>
            <Link to='/cart'><h4>Cart </h4></Link> 
-                <Link to="/cart">  <i className={`${cartClassName} ri-fw ri-2x`}></i></Link>
+                <Link to="/cart">  <i className={`${cartClassName} ri-fw ri-2x`}></i> <small>{cartItems.length}</small></Link>
             </div>
             
         </header>
