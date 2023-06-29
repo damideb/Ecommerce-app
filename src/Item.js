@@ -6,12 +6,11 @@ import {Context} from './Context'
 
 
 function ItemDescription(props){
+
     const{itemId} = useParams()
-    const bagItem = data.find(item=> item.id===itemId)
+    const singleItem = data.find(item=> item.id===itemId)
     const {addToCart,cartItems} = useContext(Context)
     const[quantity,setQuantity] = useState(1)
-  
- 
     const navigate = useNavigate()
 
   
@@ -25,15 +24,15 @@ function viewCart(){
             navigate('/cart')
         }
 
-    const inCart = cartItems.some(item => item.id === bagItem.id)
+    const inCart = cartItems.some(item => item.id === singleItem.id)
 
-function doubleCheck(bagItem){
-    bagItem.quantity = quantity
+function doubleCheck(Item){
+    Item.quantity = quantity
         if(inCart){
             viewCart()
         }
         else{
-            addToCart(bagItem)
+            addToCart(Item)
         
         }
         
@@ -51,17 +50,17 @@ function minus(){
 
     return(
         <div>
-           <img  src={bagItem.url}  alt='' className="bagItem"/>
+           <img  src={singleItem.url}  alt='' className="bagItem"/>
            <p 
             className="arrow"
             onClick={handleClick}><span> <i className="ri-arrow-go-back-line" ></i></span> Go back</p>
                 <span className='bagRating'> 
-           {bagItem.ratings} <i className="ri-star-half-s-line"></i>
+           {singleItem.ratings} <i className="ri-star-half-s-line"></i>
            <i className="ri-star-half-s-line"></i>
            <i className="ri-star-half-s-line"></i>
            <i className="ri-star-half-s-line"></i>
            </span>
-           <p className="bagPrice">${bagItem.price*quantity}</p>
+           <p className="bagPrice">${singleItem.price*quantity}</p>
            <div className="quantity">
            <p className="qty">Qty:</p>
          
@@ -71,11 +70,13 @@ function minus(){
            
            </div>
             
+           { inCart?
            <button className="cartButton"
-           onClick={()=>doubleCheck(bagItem)}
-           >
-            { inCart? "View In Cart" : "Add to Cart"}</button>
-            
+           onClick={()=>doubleCheck(singleItem)}
+           >  View In Cart </button>
+              :    <button className="cartButton" id="addItemButton"
+              onClick={()=>doubleCheck(singleItem)}
+              >  Add To Cart </button> }
         </div>
     )
 }
