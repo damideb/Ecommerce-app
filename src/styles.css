@@ -150,7 +150,7 @@ div.order-button > button:disabled {
     position: absolute;
     top: 16px;
     right: 9px;
-    background-color: red;
+    background-color: black;
     border-radius: 50%;
     width: 1%;
     font-size: 10px;
