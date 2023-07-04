@@ -6,7 +6,11 @@
     --blue: #ACE6EC;
 }
 
-html, body {
+html{
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Oswald', sans-serif;
     margin: 0;
     padding: 0;
@@ -15,8 +19,74 @@ html, body {
 }
 
 .homepage{
+    font-family:Courier New;
+margin: 0;
+color: white;
+}
+
+.homepage ::before{
+    content: "";
+    background-image: url(images/bag.png);
+    filter: brightness(0.7);
+    background-size: cover;
+    background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.2;
     
 }
+nav>h3{
+    padding: 15px;
+    cursor: pointer;
+}
+
+.buyNowText{
+    background-color: #9FA180;
+    opacity: 0.8;
+    }
+    .buyNowText > i{
+    color: #FEFBF6;
+    margin: 0;
+    font-family: Courier New ;
+    margin-left: 35%;
+    font-size: 11px;
+    
+    }
+    
+    .bodyText{
+    margin:5em 0 0 24em;
+    color: #FEFBF6;
+    
+    }
+    .bodyText >h2{
+     margin-left:5em ;
+     font-size: 2rem;
+    }
+    .bodyText >p{
+        font-size: 18px;
+        margin-left:9em ;
+        margin-top: 3em;
+       }
+    
+    .bodyText > button{
+        background-color: #183A1D;
+        color: #FEFBF6;
+        margin:3em 0 0 25em;
+        width: 20%;
+        height: 55px;
+        border-radius: 4px;
+       border: 0.5px  white;
+       cursor: pointer;
+       -webkit-box-shadow: 0px 2px 10px -3px rgba(21,6,5,1);
+       -moz-box-shadow: 0px 2px 10px -3px rgba(21,6,5,1);
+       box-shadow: 0px 2px 10px -3px     rgba(21,6,5,1);
+       }
 
 main.photos {
     margin-top: 2.5%;
@@ -172,16 +242,18 @@ div.order-button > button:disabled {
  
 
 
-header {
+.head {
+    background-color: #49493C;
+    width: 100%;
+    height: 60px;
+    color: #D8C4B6;
+    margin: 0;
+    -webkit-box-shadow: 0px 2px 10px -3px rgba(21,6,5,1);
+    -moz-box-shadow: 0px 2px 10px -3px rgba(21,6,5,1);
+    box-shadow: 0px 2px 10px -3px     rgba(21,6,5,1);
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: var(--brown);
-    color: var(--light-blue);
-    padding: 0px 10px;
-    -webkit-box-shadow: 0px 2px 10px -5px rgba(21,6,5,1);
-    -moz-box-shadow: 0px 2px 10px -5px rgba(21,6,5,1);
-    box-shadow: 0px 2px 10px -5px rgba(21,6,5,1);
+    justify-content: space-between;
 }
 
 
