@@ -21,7 +21,7 @@ function Photos() {
     return (
         <div>
         <main className="photos">
-            {imageElements}
+            {imageElements.slice(0,10)}
         </main>
         <div className="direction">
         <button className="previous">&laquo; Previous</button>
