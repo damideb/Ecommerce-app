@@ -9,14 +9,14 @@ function Header() {
     return (
         <header>
 
-<nav class="head">
-   <Link to="/"><h3>Home </h3></Link>
+<nav className="head">
+    <h3><Link to='/'> Home </Link></h3>
         <h3>About us</h3>
-        <h3>Discover</h3>
+        <h3>Shop</h3>
         <h3>contact us</h3>
         <Link to="/cart">  <i className={`${cartClassName} ri-fw ri-2x`}></i> </Link><small className="cartNumber">{cartItems.length}</small>
     </nav>
-            
+    <div className="buyNowText"><i >buy now and get 30% off your next purchase!!!</i></div>
         </header>
     )
 }

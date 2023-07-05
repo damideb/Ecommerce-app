@@ -11,6 +11,7 @@ html{
 }
 
 body {
+    
     font-family: 'Oswald', sans-serif;
     margin: 0;
     padding: 0;
@@ -19,15 +20,15 @@ body {
 }
 
 .homepage{
-    font-family:Courier New;
+font-family:Courier New;
 margin: 0;
 color: white;
 }
 
-.homepage ::before{
+.bodyText ::before{
     content: "";
     background-image: url(images/bag.png);
-    filter: brightness(0.7);
+    filter: brightness(0.5);
     background-size: cover;
     background-repeat: no-repeat;
   height: 100vh;
@@ -38,7 +39,7 @@ color: white;
   bottom: 0px;
   left: 0px;
   z-index: -1;
-  opacity: 0.2;
+  opacity: 0.6;
     
 }
 nav>h3{
@@ -74,13 +75,14 @@ nav>h3{
         margin-top: 3em;
        }
     
-    .bodyText > button{
+    .exploreButton{
         background-color: #183A1D;
         color: #FEFBF6;
-        margin:3em 0 0 25em;
+        font-size: 17px;
+        margin:1.5em 0 0 40em;
         width: 20%;
-        height: 55px;
-        border-radius: 4px;
+        height: 59px;
+        border-radius: 30px;
        border: 0.5px  white;
        cursor: pointer;
        -webkit-box-shadow: 0px 2px 10px -3px rgba(21,6,5,1);
@@ -88,13 +90,21 @@ nav>h3{
        box-shadow: 0px 2px 10px -3px     rgba(21,6,5,1);
        }
 
+       .exploreButton:hover{
+        background-color: transparent;
+        color: #150605;
+        
+       }
+
 main.photos {
-    margin-top: 2.5%;
-    padding: 10px;
+    margin-top: 2%;
+    margin-left: 5%;
+    padding: 3px;
     display: grid;
-    grid-gap: 5px;
-    grid-auto-rows: 300px;
-    grid-template-columns: repeat(4, minmax(150px, 2fr));
+    justify-content: center;
+    grid-gap: 10px;
+    grid-auto-rows: 350px;
+    grid-template-columns: repeat(3, minmax(150px, 2fr));
     grid-auto-flow: dense;
     
 }
@@ -159,52 +169,54 @@ div.order-button > button:disabled {
 }
 
 .image-grid {
-    border-radius: 3.5px 3.5px 0px 0;
-    -moz-border-radius:5px;
-    -webkit-box-shadow: rgba(0, 0, 0, 4) 0px 5px 4px;
-    -moz-box-shadow: rgba(0, 0, 0, 4) 0px 5px 4px;
-    box-shadow:  rgba(0, 0, 0, 4) 0px 5px 4px;
-    width: 90%;
-    height: 85%;
+    width: 75%;
+    height: 70%;
     object-fit: cover;
-    cursor: pointer
+    cursor: pointer;
+    padding-left: 45px;
+    padding-top: 10px;
 }
 
 .image-container {
-    position: relative
-  
+    position: relative;
+    width: 85%;
+    height: 90%;
+    background-color: white;
+    border-radius: 3.5px 3.5px 0px 0;
+    -moz-border-radius:5px ;
+    -webkit-box-shadow: rgba(0, 0, 0, 4) 0px 0px 5px;
+    -moz-box-shadow: rgba(0, 0, 0, 4) 0px 0px 5px;
+    box-shadow:  rgba(0, 0, 0, 4) 0px 0px 5px;
+    
 }
 .priceList{
-    position: absolute;
-    font-weight: bold;
-    font-size: 30px;
-    top:252px ;
-    padding-top: 0px;
-   left:30px;
-   font-size:0.7rem
+    font-weight: 20px;
+   margin-left: 60px;
+    margin-bottom: 5px;
+   font-size:0.8rem;
+   
 }
 
 .rating{
-    position: absolute;
-    font-size: 30px;
-    top:262px ;
+    font-size: px;
+    position: relative;
+    bottom:30px ;
     padding-top: 0px;
-   left:120px;
+   left:250px;
    font-size:0.7rem
 }
 .imageText{
-    color: #FFD89C;
-    border-radius: 0 0 5px 5px;
-    margin-top: 0;
-    padding-top: 0;
-    background-color: var(--red);
-    width: 90%;
-    height: 7%;
+  background-color: #49493C;
+  margin-top: 44px;
+ height: 10%;
+    font-weight: 20pxp;
+    color: white;
+    padding-top: 5px;
 
 }
 
 .favorite {
-    color: var(--red);
+    color: #9FA180;
     font-size: 1.2rem;
     position: absolute;
     top: 5px;
@@ -222,21 +234,21 @@ div.order-button > button:disabled {
 }
 .cartNumber{
     position: absolute;
-    top: 16px;
+    top: 21px;
     right: 9px;
-    background-color: black;
+    background-color: #9FA180;
     border-radius: 50%;
-    width: 1%;
-    font-size: 10px;
+    width: 0.8%;
+    font-size: 8px;
     text-align:   center;
 }
 
 .cart {
-    color: var(--red);
+    color: #9FA180;
     font-size: 1.2rem;
     position: absolute;
     top: 5px;
-    right: 30px;
+    right:90px;
     cursor: pointer;
 }
  
@@ -246,7 +258,7 @@ div.order-button > button:disabled {
     background-color: #49493C;
     width: 100%;
     height: 60px;
-    color: #D8C4B6;
+    color: white;
     margin: 0;
     -webkit-box-shadow: 0px 2px 10px -3px rgba(21,6,5,1);
     -moz-box-shadow: 0px 2px 10px -3px rgba(21,6,5,1);
@@ -307,11 +319,11 @@ div.order-button > button:disabled {
 }
 
 .quantity{
-    position: absolute;
-    left: 35%;
-    top: 62%;
-    display: flex;
-    gap:10px;
+position: absolute;
+left: 35%;
+top: 62%;
+display: flex;
+gap:10px;
 display: flex;
 align-items: center;
 width: 90%;
@@ -330,17 +342,20 @@ padding-bottom: 20px;
 
 .cartButton{
     position: absolute;
+    border: 1px solid #49493C;
+    background-color: transparent;
     cursor: pointer;
     left: 50%;
    top: 75%;
-   width: 15%;
-   height: 35px;
+   width: 18%;
+   height: 38px;
    border-radius: 2px;
 }
 
 #addItemButton{
-    background-color:var(--brown) ;
-    color: var(--red);
+    background-color: #9FA180 ;
+    border: 1px solid #49493C ;
+    color: white;
 }
 
 

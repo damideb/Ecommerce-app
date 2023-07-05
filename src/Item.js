@@ -16,7 +16,7 @@ function ItemDescription(props){
   
 
 function handleClick(){
-        navigate('/')
+        navigate('/items')
     
             }
 
