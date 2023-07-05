@@ -38,8 +38,8 @@ function Image({img}) {
             {cartIcon ()}
             <div className="imageText">
                 <p className='priceList'> ${img.price}</p>
-            <span className='rating'> 
-           {img.ratings} <i className="ri-star-half-fill"></i></span>
+            <p className='rating'> 
+           {img.ratings} <i className="ri-star-half-fill"></i></p>
             </div>
             
                 

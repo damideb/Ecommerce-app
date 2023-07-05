@@ -12,11 +12,23 @@ function Photos() {
     const imageElements = allPhotos.map((img) => (
         <Image key={img.id} img={img} />
     ))
+
+ 
+
+   
+
     
     return (
+        <div>
         <main className="photos">
             {imageElements}
         </main>
+        <div className="direction">
+        <button className="previous">&laquo; Previous</button>
+        <button className="next"
+        > next &raquo;</button>
+        </div>
+        </div>
     )
 }
 
