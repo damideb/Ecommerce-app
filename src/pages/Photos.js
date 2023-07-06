@@ -14,7 +14,7 @@ function Photos() {
 
 
     const[startIndex, setStartIndex] = useState(0)
-    const[endIndex, setEndIndex] = useState(10)
+    const[endIndex, setEndIndex] = useState(9)
     
   
 
@@ -22,8 +22,8 @@ function Photos() {
     
     if(imageElements.length > endIndex){
       
-        setStartIndex(startIndex+10)
-        setEndIndex(endIndex+10)
+        setStartIndex(startIndex+9)
+        setEndIndex(endIndex + 9)
         window.scrollTo(0,0)
 
        
@@ -36,8 +36,8 @@ function Photos() {
  function previous(){
     if( startIndex > 0 ){
         window.scrollTo(0,0)
-        setStartIndex(startIndex- 10)
-        setEndIndex(endIndex - 10)
+        setStartIndex(startIndex- 9)
+        setEndIndex(endIndex - 9)
     
     }
    
@@ -53,11 +53,11 @@ function Photos() {
         <div className="direction">
         <button className="previous" 
         onClick={previous}
-        >&laquo; Previous</button>
+        >&laquo; </button>
        
             <button className="next"
         onClick={next}
-        > next &raquo;</button>
+        > &raquo;</button>
         
     
         

@@ -49,7 +49,7 @@ import CartItem from "../components/CartItem"
                 </div> :
                 <div>
                 <p>You have no items in your cart.</p>
-            <i className="goHomeText"> Go to home page to add items to cart</i>
+            <i className="goHomeText"> Go back to add items to cart</i>
             </div>
             }
 
