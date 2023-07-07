@@ -390,3 +390,17 @@ a {
 a:visited { color: var(--light-blue); }
 a:hover { color: var(--light-blue); }
 a:active { color: var(--light-blue); }
+
+
+ @media screen and (max-width: 480px) {
+    main.photos {
+        margin-top: 2%;
+        margin-left: 10%;
+        padding: 2px;
+        grid-gap: 5px;
+        grid-auto-rows: 350px;
+        grid-template-columns: repeat(1, minmax(150px, 2fr));
+        grid-auto-flow: dense;
+        
+    }
+ }
