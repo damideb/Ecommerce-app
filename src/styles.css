@@ -532,6 +532,12 @@ a:active { color: var(--light-blue); }
         cursor: pointer;
     }
    
+    .cartNumber{
+        top: 1.4rem;
+          right: 0.7rem;
+          width: 1.6%;
+          font-size: 8px;
+      }
    
     
 
