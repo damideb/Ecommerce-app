@@ -49,7 +49,7 @@ function minus(){
 }}
 
     return(
-        <div>
+        <main className="singleItem">
            <img  src={singleItem.url}  alt='' className="bagItem"/>
            <p 
             className="arrow"
@@ -61,13 +61,12 @@ function minus(){
            <i className="ri-star-half-s-line"></i>
            </span>
            <p className="bagPrice">${singleItem.price*quantity}</p>
+
            <div className="quantity">
            <p className="qty">Qty:</p>
-         
             <p className="plus" onClick={sum}>+</p>
             <p className="number">{quantity}</p>
-            <p className="minus" onClick={minus}> - </p>
-           
+            <p className="minus" onClick={minus}> - </p> 
            </div>
             
            { inCart?
@@ -77,7 +76,7 @@ function minus(){
               :    <button className="cartButton" id="addItemButton"
               onClick={()=>doubleCheck(singleItem)}
               >  Add To Cart </button> }
-        </div>
+        </main>
     )
 }
 export default ItemDescription
