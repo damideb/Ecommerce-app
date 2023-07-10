@@ -26,7 +26,7 @@ color: white;
 overflow-x: hidden;
 }
 
-.homepage ::before{
+.bodyText ::before{
     content: "";
     background-image: url(images/bag.png);
     filter: brightness(0.5);
@@ -328,11 +328,10 @@ justify-content: space-between;
     position: absolute;
     cursor: pointer;
     left: 35%;
+    text-align: center;
    top: 22%;
-   padding-top: 5px;
-   padding-left: 3px;
-   width: 6%;
-   height: 6%;
+   width: 6.4%;
+   height: 4.4%;
    border: 1px solid black;
 }
 .bagPrice{
@@ -533,12 +532,40 @@ a:active { color: var(--light-blue); }
     }
    
     .cartNumber{
-        top: 1.4rem;
+        top: 1.3rem;
           right: 0.7rem;
           width: 1.6%;
           font-size: 8px;
       }
    
+      .bagItem{
+        width: 65%;
+    height: 300px;
+        
+    }
+    
+    .bagRating{
+       
+    }
+    
+    .arrow{
+        font-size: 0.7em;
+        width: 13%;
+        height: 2%;
+        top: 6rem;
+        left: 20rem;
+    }
+    .bagPrice{
+        
+    }
+    
+    .quantity{
+  
+    
+    }
+    .plus, .minus{
+        
+    }
     
 
  }
