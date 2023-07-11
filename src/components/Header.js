@@ -16,7 +16,7 @@ function Header() {
         <header>
 
 <nav className="head">
-    <h1>BagUp</h1>
+    <h1>Styless</h1>
     <h3><NavbarLink href='/'> Home </NavbarLink></h3>
     <h3><NavbarLink href='/items'> Shop </NavbarLink></h3>
         <h3>contact us</h3>

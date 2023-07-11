@@ -194,12 +194,14 @@ div.order-button > button:disabled {
 }
 
 .image-grid {
+    max-width: 300px;
+    min-width: 150px;
     width: 75%;
     height: 70%;
     object-fit: cover;
     cursor: pointer;
-    padding-left: 45px;
-    padding-top: 10px;
+    padding-left: 2rem;
+    padding-top: 1rem;
 }
 
 .image-container {
@@ -234,7 +236,7 @@ div.order-button > button:disabled {
 }
 .imageText{
   background-color: #49493C;
-  margin-top: 44px;
+  margin-top: 2.3rem;
  height: 10%;
     font-weight: 20pxp;
     color: white;
@@ -246,7 +248,7 @@ div.order-button > button:disabled {
     color: #9FA180;
     font-size: 1.2rem;
     position: absolute;
-    top: 12px;
+    top: 1.5rem;
     left: 50px;
     cursor: pointer;
 }
@@ -274,8 +276,8 @@ div.order-button > button:disabled {
     color: #9FA180;
     font-size: 1.2rem;
     position: absolute;
-    top: 12px;
-    right:48px;
+    top: 1.2rem;
+    right:3.5rem;
     cursor: pointer;
 }
  
@@ -409,8 +411,6 @@ a:active { color: var(--light-blue); }
     .image-grid {
         width: 70%;
         height: 65%;
-        object-fit: cover;
-        cursor: pointer;
         padding-top: 10px;
     }
     
@@ -418,7 +418,6 @@ a:active { color: var(--light-blue); }
         overflow: hidden;
         width: 75%;
         height: 80%;
-        background-color: white;
     }
 
     .head > h3{
@@ -431,10 +430,6 @@ a:active { color: var(--light-blue); }
         padding-left: 5px;
     }
     
-    .buyNowText{
-        background-color: #9FA180;
-        opacity: 0.8;
-        }
         .buyNowText > i{
         margin-left: 2.5em;
         font-size: 0.7rem;
@@ -443,7 +438,6 @@ a:active { color: var(--light-blue); }
         
         .bodyText{
         margin:9em 0 0 0;
-        color: #FEFBF6;
         
         }
         .bodyText >h2{
@@ -458,7 +452,6 @@ a:active { color: var(--light-blue); }
            }
         
         .exploreButton{
-            font-family: Courier New;
             font-size: 1rem;
             margin:1.5em 0 0 7em;
             width:50%;
@@ -467,10 +460,7 @@ a:active { color: var(--light-blue); }
            border: 0.5px  white;
            }
     
-           .exploreButton:hover{
-            background-color: transparent;
-            color: #150605;
-           }
+
     .direction{
         margin-left: 10em;
        width: 30%;
@@ -481,9 +471,6 @@ a:active { color: var(--light-blue); }
         height: 29px;
         margin-right: 20px;
         margin-bottom: 25px;
-        cursor: pointer;
-        background-color: #150605;
-        color: white;
         font-size: 0.9rem;
     }
     
@@ -517,22 +504,17 @@ a:active { color: var(--light-blue); }
        font-size:0.7rem
     }
     .imageText{
-      background-color: #49493C;
       margin-top: 52px;
      height: 10%;
         font-weight: 20px;
-        color: white;
         padding-top: 4px;
     
     }
     
     .favorite {
-        color: #9FA180;
         font-size: 1.2rem;
-        position: absolute;
         top: 15px;
         left: 50px;
-        cursor: pointer;
     }
    
     .cartNumber{
@@ -583,6 +565,168 @@ a:active { color: var(--light-blue); }
        width: 30%;
        height: 40px;
     }
+}
+    @media screen and ( min-width:500px) and (max-width:768px) {
+        main.photos {
+            margin-top: 3%;
+            margin-left: 2.5rem;
+            padding: 1px;
+            grid-gap: 1px;
+            grid-template-columns: repeat(2, minmax(150px, 1fr));
     
+        }
+    
+        .image-grid {
+            width: 75%;
+            height: 65%;
+            padding-left: 2.5rem;
+            padding-top: 1rem;
+        }
+        
+        .image-container {
+            overflow: hidden;
+            width: 80%;
+            height: 80%;
+        }
+    
+        .head > h3{
+            font-size: 1rem;
+            padding: 10px;
+        }
+        
+        .head >h1{
+            font-size: 1.2rem;
+            padding-left: 5px;
+        }
+        
+            .buyNowText > i{
+            margin-left: 12rem;
+            font-size: 0.7rem;
+            
+            }
+            
+            .bodyText{
+            margin:10rem 4rem  0;
+            
+            }
+            .bodyText >h2{
+             margin-left:1em ;
+             font-size: 1.5rem;
+             margin-top: 4em;
+            }
+            .bodyText >p{
+                font-size: 0.9rem;
+                margin-left:1.5em ;
+                margin-top: 1.9em;
+               }
+            
+            .exploreButton{
+                font-size: 1rem;
+                margin:2em 0 0 11rem;
+                width:30%;
+                height: 50px;
+               }
+        
+        .direction{
+            margin-left: 19em;
+        }
+        
+        .previous, .next{
+            width: 20%;
+            height: 29px;
+            margin-right: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .singleItem{
+            overflow-x: hidden;
+        }
+        
+        .quantityFigure{
+            margin-right: 26%;
+        }
+        
+       
+         .goHomeText{
+            margin-left: 30%;
+            font-size: 13px;
+        }
+      
+      
+        .priceList{
+            position: relative;
+      left: 1px;
+      bottom: 10px;
+           font-size:0.8rem;
+           
+        }
+        
+        .rating{
+            bottom:39px ;
+           left:200px;
+           font-size:0.7rem
+        }
+        .imageText{
+          margin-top: 52px;
+         height: 10%;
+            font-weight: 20px;
+            padding-top: 4px;
+        
+        }
+        
+        .favorite {
+            font-size: 1.2rem;
+            top: 15px;
+            left: 50px;
+        }
+       
+        .cartNumber{
+            top: 1.3rem;
+              right: 0.7rem;
+              font-size: 8px;
+          }
+       
+          .bagItem{
+            width: 65%;
+        height: 400px;
+        margin-left: 20%;
+        margin-top: 7rem;
+            
+        }
+        
+        .bagRating{
+           top: 9.5rem;
+           left: 80%;
+           font-size: 1em;
+        }
+        
+        .arrow{
+            font-size: 1rem;
+            height: 1.5em;
+            top: 7rem;
+            left: 2rem;
+        }
+        .bagPrice{
+            left: 55%;
+        top: 43rem;
+        width: 28%;
+        font-size: 17px;
+        }
+        
+        .quantity{
+      top: 44.5rem;
+      left: 1rem;
+      font-size: smaller;
+        
+        }
+    
+        .cartButton{
+            left: 37%;
+           top: 53rem;
+           width: 30%;
+           height: 45px;
+           font-size: 0.9rem;
+        }
+        
 
  }
