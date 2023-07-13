@@ -4,13 +4,13 @@ import { useNavigate} from "react-router-dom"
 
 function Frontpage(){
 
-const navigate = useNavigate()
+    const navigate = useNavigate()
 
-function handleClick(){
+        function handleClick(){
     navigate('/items')
-
         }
-    return(
+
+             return(
         <div>
     <div className="homepage">
         <div className="bodyText" >
@@ -21,8 +21,7 @@ function handleClick(){
         onClick={handleClick}
         >Explore Our Range</button>
     </div>
-
-        </div>
+     </div>
     )
 }
 
