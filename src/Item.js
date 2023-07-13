@@ -5,7 +5,7 @@ import {Context} from './Context'
 
 
 
-function ItemDescription(props){
+function ItemDescription(){
 
     const{itemId} = useParams()
     const singleItem = data.find(item=> item.id===itemId)
