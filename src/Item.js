@@ -7,11 +7,11 @@ import {Context} from './Context'
 
 function ItemDescription(){
 
-    const{itemId} = useParams()
-    const singleItem = data.find(item=> item.id===itemId)
-    const {addToCart,cartItems} = useContext(Context)
-    const[quantity,setQuantity] = useState(1)
-    const navigate = useNavigate()
+     const{itemId} = useParams()
+        const singleItem = data.find(item=> item.id===itemId)
+            const {addToCart,cartItems} = useContext(Context)
+                const[quantity,setQuantity] = useState(1)
+                    const navigate = useNavigate()
 
   
 
