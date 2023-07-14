@@ -593,6 +593,12 @@ font-weight: lighter;
             top: 1.2rem;
             right:2rem;
         }
+         .cart-page > h6 {
+        margin-left: 67%;
+    }
+    .cart-page div.order-button {
+        margin-top: 4rem;
+     }
         .image-grid {
             width: 75%;
             height: 65%;
