@@ -38,7 +38,7 @@ import CartItem from "../components/CartItem"
     return (
         <main className="cart-page">
            <h2> {orderPlaced? "Order Placed successfully!" : "Check out"}</h2>
-         { cartItems.length>0 &&  <h6>Qty</h6>  }
+         { cartItems.length>0 &&  <h6 >Qty</h6>  }
             {cartItemElements} 
             <p className="total-cost">Total: {totalCostDisplay}</p>
             {

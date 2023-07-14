@@ -567,9 +567,14 @@ font-weight: lighter;
        width: 30%;
        height: 40px;
     }
-    
+    .cart-page > h6 {
+        margin-left: 60%;
+    }
     .cart-page .total-cost {
         font-size: 1em;
+    }
+    .cart-page div.order-button {
+       margin-top: 4rem;
     }
 }
     @media screen and ( min-width:500px) and (max-width:768px) {
@@ -740,7 +745,10 @@ font-weight: lighter;
            height: 45px;
            font-size: 0.9rem;
         }
-        
+        .quantity{
+            margin-right: 2%;
+            color: red;
+        }
 
  }
 
