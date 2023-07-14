@@ -383,9 +383,7 @@ a {
     text-decoration: none;
 }
 
-a:visited { color: var(--light-blue); }
-a:hover { color: var(--light-blue); }
-a:active { color: var(--light-blue); }
+
 
 
  @media screen and (max-width: 480px) {
