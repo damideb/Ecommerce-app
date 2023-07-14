@@ -382,8 +382,15 @@ padding-bottom: 20px;
 a {
     text-decoration: none;
 }
+a:visited { color: white; }
+a:hover { color: var(--light-blue); }
+a:active { color: var(--light-blue); }
 
+a{
+    color: white;
+font-weight: lighter;
 
+}
 
 
  @media screen and (max-width: 480px) {
@@ -515,8 +522,8 @@ a {
     .cartNumber{
         top: 1.3rem;
           right: 0.7rem;
-          width: 1.4%;
-          font-size: 8px;
+          width: 1.5%;
+          font-size: 7px;
       }
    
       .bagItem{
@@ -536,7 +543,7 @@ a {
     .arrow{
         font-size: 0.7em;
         width: 13%;
-        height: 2%;
+        height: 2.5%;
         top: 5.5rem;
         left: 1rem;
     }
