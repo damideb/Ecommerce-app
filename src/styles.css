@@ -131,6 +131,7 @@ main.photos {
 }
 
 main.cart-page {
+    font-family:karla;
     padding: 10px;
 }
 
@@ -183,7 +184,7 @@ div.order-button > button:disabled {
 }
  .goHomeText{
     margin-left: 30%;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .image-grid {
@@ -229,11 +230,11 @@ div.order-button > button:disabled {
 }
 .imageText{
   background-color: #49493C;
-  margin-top: 2.3rem;
+  margin-top: 2.6rem;
  height: 10%;
-    font-weight: 20pxp;
+    font-weight: 20px;
     color: white;
-    padding-top: 5px;
+    padding-top: 0.1rem;
 
 }
 
@@ -386,10 +387,11 @@ a:visited { color: white; }
 a:hover { color: var(--light-blue); }
 a:active { color: var(--light-blue); }
 
-a{
-    color: white;
-font-weight: lighter;
-
+a>span{
+    color: #49493C;
+    text-decoration: underline;
+    padding: 2px;
+    font-style: normal;
 }
 
 
@@ -483,7 +485,7 @@ font-weight: lighter;
    
      .goHomeText{
         margin-left: 30%;
-        font-size: 13px;
+        font-size: 14px;
     }
   
   
@@ -596,9 +598,9 @@ font-weight: lighter;
          .cart-page > h6 {
         margin-left: 67%;
     }
-    .cart-page div.order-button {
-        margin-top: 4rem;
-     }
+     .cart-page div.order-button {
+       margin-top: 4rem;
+    }
         .image-grid {
             width: 75%;
             height: 65%;
@@ -673,7 +675,7 @@ font-weight: lighter;
        
          .goHomeText{
             margin-left: 30%;
-            font-size: 13px;
+            font-size: 14px;
         }
       
       
@@ -823,7 +825,7 @@ font-weight: lighter;
    
      .goHomeText{
         margin-left: 30%;
-        font-size: 13px;
+        font-size: 14px;
     }
   
   

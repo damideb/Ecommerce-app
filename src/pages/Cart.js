@@ -1,4 +1,5 @@
 import React, {useContext,useState}from "react"
+import {Link} from "react-router-dom"
 import {Context} from "../Context"
 import CartItem from "../components/CartItem"
 
@@ -49,7 +50,7 @@ import CartItem from "../components/CartItem"
                 </div> :
                 <div>
                 <p>You have no items in your cart.</p>
-            <i className="goHomeText"> Go back to add items to cart</i>
+            <p className="goHomeText"> click <Link to='/items'><span>Here</span> </Link>to go back to add items to cart</p>
             </div>
             }
 
