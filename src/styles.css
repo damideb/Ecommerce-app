@@ -387,7 +387,7 @@ a:visited { color: white; }
 a:hover { color: var(--light-blue); }
 a:active { color: var(--light-blue); }
 
-a>span{
+a > span{
     color: #49493C;
     text-decoration: underline;
     padding: 2px;
@@ -412,7 +412,7 @@ a>span{
         height: 65%;
         padding-top: 10px;
     }
-    
+    a:visited { color: white; }
     .image-container {
         min-width: 200px;
         overflow: hidden;
@@ -753,10 +753,7 @@ a>span{
            height: 45px;
            font-size: 0.9rem;
         }
-        .quantity{
-            margin-right: 2%;
-            color: red;
-        }
+        
 
  }
 
