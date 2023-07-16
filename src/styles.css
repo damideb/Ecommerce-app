@@ -140,6 +140,8 @@ main.cart-page {
 }
 .cart-page > h6 {
     margin-left: 70%;
+    font-size: 0.9rem;
+    font-weight: bolder;
 }
 
 .cart-page .total-cost {
