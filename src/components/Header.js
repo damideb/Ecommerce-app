@@ -11,10 +11,10 @@ function Header() {
 
 <nav className="head">
     <h1>Styless</h1>
-    <h3><Link to='/'> Home </Link></h3>
-    <h3><Link to='/items'> Shop </Link></h3>
-        <h3>contact us</h3>
-        <Link to="/cart">  <i className={`${cartClassName} ri-fw ri-2x`}></i> </Link><small className="cartNumber">{cartItems.length}</small>
+    <Link to='/'> <h3 className="first">Home</h3> </Link>
+    <Link to='/items'> <h3 className="shop">Shop</h3> </Link>
+    <Link to='#'> <h3 className="contact"> Contact Us</h3> </Link>
+        <Link to="/cart">  <i id="icon" className={`${cartClassName} ri-fw ri-2x`}></i> </Link><small className="cartNumber">{cartItems.length}</small>
     </nav>
     <div className="buyNowText"><i >buy now and get 30% off your next purchase!!!</i></div>
         </header>
