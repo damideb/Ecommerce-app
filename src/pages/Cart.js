@@ -7,6 +7,7 @@ import CartItem from "../components/CartItem"
     function Cart() {
     const [buttonText, setButtonText] = useState("Place Order");
     const[orderPlaced, setOrderPlaced] = useState(false)
+    const[loadingOrder, setLoadingorder] = useState(false)
     const {cartItems, emptyCart} = useContext(Context)
  
     const cartItemPrice = cartItems.map(item=> ( 
@@ -24,7 +25,8 @@ import CartItem from "../components/CartItem"
     )) 
 
     function placeOrder() {
-        setButtonText("Ordering...")
+        setButtonText("Ordering")
+        setLoadingorder(true)
         setTimeout(() => {
             setOrderPlaced(true)
             setTimeout( ()=>{
@@ -48,6 +50,9 @@ import CartItem from "../components/CartItem"
                 <div className="order-button">
                     <button onClick={placeOrder}>
                         {buttonText}
+        {
+            loadingOrder && <div className="loader"></div>}
+                        
                     
                     </button>
         
