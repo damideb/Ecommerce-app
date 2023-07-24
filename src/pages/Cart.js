@@ -38,19 +38,24 @@ import CartItem from "../components/CartItem"
 
     return (
         <main className="cart-page">
+  
            <h2> {orderPlaced? "Order Placed successfully!" : "Check out"}</h2>
          { cartItems.length>0 &&  <h6 >Qty</h6>  }
-            {cartItemElements} 
+            {cartItemElements}
             <p className="total-cost">Total: {totalCostDisplay}</p>
             {
                 cartItems.length > 0 ?
                 <div className="order-button">
-                    <button onClick={placeOrder}>{buttonText}</button>
+                    <button onClick={placeOrder}>
+                        {buttonText}
+                    
+                    </button>
         
                 </div> :
                 <div>
                 <p>You have no items in your cart.</p>
             <p className="goHomeText"> click <Link to='/items'><span>Here</span> </Link>to go back to add items to cart</p>
+
             </div>
             }
 
