@@ -27,7 +27,6 @@ function viewCart(){
     const inCart = cartItems.some(item => item.id === singleItem.id)
 
 function doubleCheck(Item){
-   
     Item.quantity = quantity
     if(quantity>0){
         if(inCart){
@@ -45,12 +44,14 @@ function doubleCheck(Item){
 
 
 function sum(){
- return  setQuantity(quantity + 1)
+    setQuantity(quantity + 1)
+    
 }
 
 function minus(){
     if(quantity > 1){
-    return  setQuantity(quantity  -1)
+          setQuantity(quantity  -1)
+    
 }}
 
     return(
@@ -84,6 +85,7 @@ function minus(){
            onClick={()=>doubleCheck(singleItem)}
            >  View In Cart </button>
               :    <button className="cartButton" id="addItemButton"
+              disabled={quantity < 1}
               onClick={()=>doubleCheck(singleItem)}
               >  Add To Cart </button> }
         </main>

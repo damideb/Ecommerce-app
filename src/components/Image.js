@@ -8,7 +8,7 @@ import useHover from "../hooks/useHover"
 function Image({img}) {
     const [hovered, ref] = useHover()
  
-    const {toggleFavorite, cartItems, addToCart,removeFromCart} = useContext(Context)
+    const {toggleFavorite} = useContext(Context)
     
     function heartIcon() {
         if(img.isFavorite) {
@@ -18,14 +18,7 @@ function Image({img}) {
         }}
 
         
-        function cartIcon() {
-            const alreadyInCart = cartItems.some(item => item.id === img.id)
-            if(alreadyInCart) {
-                return <i className="ri-shopping-cart-fill cart" onClick={() => removeFromCart(img.id)}></i>
-            } else if(hovered) {
-                return <i className="ri-add-circle-line cart" onClick={() => addToCart(img)}></i>
-            }
-        }
+        
         
     
 
@@ -35,7 +28,7 @@ function Image({img}) {
                 <img src={img.url} alt = 'Products' className="image-grid"/>
                 </Link>
           {heartIcon()}
-            {cartIcon ()}
+            
             <div className="imageText">
                 <p className='priceList'> ${img.price}</p>
             <p className='rating'> 
