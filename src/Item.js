@@ -27,7 +27,9 @@ function viewCart(){
     const inCart = cartItems.some(item => item.id === singleItem.id)
 
 function doubleCheck(Item){
+   
     Item.quantity = quantity
+    if(quantity>0){
         if(inCart){
             viewCart()
         }
@@ -35,6 +37,9 @@ function doubleCheck(Item){
             addToCart(Item)
         
         }
+    }
+    return;
+       
         
     }
 
@@ -44,7 +49,7 @@ function sum(){
 }
 
 function minus(){
-    if(quantity>0){
+    if(quantity > 1){
     return  setQuantity(quantity  -1)
 }}
 
@@ -60,12 +65,17 @@ function minus(){
            <i className="ri-star-half-s-line"></i>
            <i className="ri-star-half-s-line"></i>
            </span>
-           <p className="bagPrice">${singleItem.price*quantity}</p>
+           <p className="bagPrice">${quantity>0 &&  singleItem.price*quantity}</p>
 
            <div className="quantity">
            <p className="qty">Qty:</p>
             <p className="plus" onClick={sum}>+</p>
-            <p className="number">{quantity}</p>
+            <input className="number"
+            type="number"
+            value={quantity}
+            onChange={(event)=>{
+                setQuantity(parseInt(event.target.value))
+            }}/>
             <p className="minus" onClick={minus}> - </p> 
            </div>
             
