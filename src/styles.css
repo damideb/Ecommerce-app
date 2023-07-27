@@ -269,14 +269,6 @@ div.order-button > button:disabled {
     text-align:   center;
 }
 
-.cart {
-    color: #9FA180;
-    font-size: 1.2rem;
-    position: absolute;
-    top: 1.2rem;
-    right:3.5rem;
-    cursor: pointer;
-}
  
 .head {
     background-color: #49493C;
@@ -594,11 +586,7 @@ a> .first,.shop,.contact{
         top: 15px;
         left: 50px;
     }
-    .cart {
-        top: 0.8rem;
-        right:3rem;
-    }
-   
+    
     .cartNumber{
           right: 5em;
           font-size: 7px;
@@ -682,10 +670,7 @@ a> .first,.shop,.contact{
         .cart-page .total-cost {
             font-size: 1em;
         }
-        .cart {
-            top: 1.2rem;
-            right:2rem;
-        }
+      
          .cart-page > h6 {
         margin-left: 67%;
     }
@@ -956,10 +941,7 @@ a> .first,.shop,.contact{
         top: 18px;
         left: 50px;
     }
-    .cart {
-        top: 1.2rem;
-        right:2rem;
-    }
+    
      
    
     .cartNumber{
