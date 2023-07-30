@@ -38,8 +38,6 @@ function doubleCheck(Item){
         }
     }
     return;
-       
-        
     }
 
 
