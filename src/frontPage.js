@@ -3,7 +3,6 @@ import { useNavigate} from "react-router-dom"
 
 
 function Frontpage(){
-
     const navigate = useNavigate()
 
         function handleClick(){

@@ -7,7 +7,6 @@ import useHover from "../hooks/useHover"
 
 function Image({img}) {
     const [hovered, ref] = useHover()
- 
     const {toggleFavorite} = useContext(Context)
     
     function heartIcon() {
@@ -16,11 +15,6 @@ function Image({img}) {
         } else if(hovered) {
             return <i className="ri-heart-line favorite" onClick={() => toggleFavorite(img.id)}></i>
         }}
-
-        
-        
-        
-    
 
     return (
         <div className="image-container" ref={ref}>

@@ -8,7 +8,6 @@ function Header() {
     const cartClassName = cartItems.length > 0 ? "ri-shopping-cart-fill" : "ri-shopping-cart-line"
     return (
         <header>
-
 <nav className="head">
     <h1>Styless</h1>
     <Link to='/'> <h3 className="first">Home</h3> </Link>

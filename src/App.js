@@ -10,7 +10,6 @@ function App() {
    
     return (
         <div >
-            
             <Header />
             <Routes >
             <Route  exact path="/" element={<Frontpage />} />
