@@ -73,7 +73,11 @@ function minus(){
             type="number"
             value={quantity}
             onChange={(event)=>{
-                setQuantity(parseInt(event.target.value))
+                    setQuantity(parseInt(event.target.value))
+                    if(event.target.value=== ""){
+                        setQuantity("")
+                    }
+
             }}/>
             <p className="minus" onClick={minus}> - </p> 
            </div>

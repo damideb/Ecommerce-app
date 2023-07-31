@@ -12,7 +12,14 @@ const[cartItems, setCartItems] = useState([])
 
 
     useEffect(() => {
+      let  isCurrent=true
+      if(isCurrent){
         setAllPhotos(data)
+      }
+      return ()=>{
+        isCurrent=false
+      } 
+        
     }, [])
 
     function toggleFavorite(id) {
