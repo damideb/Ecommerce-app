@@ -37,7 +37,6 @@ import CartItem from "../components/CartItem"
        , 2000
        )}
 
-
     return (
         <main className="cart-page">
   
@@ -48,12 +47,9 @@ import CartItem from "../components/CartItem"
             {
                 cartItems.length > 0 ?
                 <div className="order-button">
-                    <button onClick={placeOrder}>
-                        {buttonText}
-        {
-            loadingOrder && <div className="loader"></div>}
-                        
-                    
+                    <button onClick={placeOrder}>           
+        { loadingOrder && <div className="loader"></div>}
+                            {buttonText}
                     </button>
         
                 </div> :
