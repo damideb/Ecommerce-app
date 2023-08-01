@@ -71,6 +71,7 @@ function minus(){
             <p className="plus" onClick={sum}>+</p>
             <input className="number"
             type="number"
+            inputMode="numeric"
             value={quantity}
             onChange={(event)=>{
                     setQuantity(parseInt(event.target.value))
