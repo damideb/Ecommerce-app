@@ -209,9 +209,9 @@ div.order-button > button:disabled {
     background-color: white;
     border-radius: 3.5px 3.5px 0px 0;
     -moz-border-radius:5px ;
-    -webkit-box-shadow: rgba(0, 0, 0, 4) 0px 0px 5px 6px;
-    -moz-box-shadow: rgba(0, 0, 0, 4) 0px 0px 5px 6px;
-    box-shadow:  rgba(0, 0, 0, 4) 0px 0px 6px;  
+    -webkit-box-shadow: rgba(0, 0, 0, 4) 0px 0px 6px;
+    -moz-box-shadow: rgba(0, 0, 0, 4) 0px 0px 6px;
+    box-shadow:  rgba(0, 0, 0,4) 0px 0px 6px ;  
 }
 .priceList{
     font-weight: 20px;
