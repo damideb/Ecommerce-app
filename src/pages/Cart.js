@@ -48,21 +48,16 @@ import CartItem from "../components/CartItem"
                 cartItems.length > 0 ?
                 <div className="order-button">
                     <button onClick={placeOrder}>           
-        { loadingOrder && <div className="loader"></div>}
+                         { loadingOrder && <div className="loader"></div>}
                             {buttonText}
                     </button>
-        
-                </div> :
+                        </div> 
+                        :
                 <div>
                 <p>You have no items in your cart.</p>
             <p className="goHomeText"> click <Link to='/items'><span>Here</span> </Link>to go back to add items to cart</p>
-
             </div>
             }
-
-            
-           
-           
         </main>
     )
 }
