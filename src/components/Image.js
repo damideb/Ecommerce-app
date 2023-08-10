@@ -18,7 +18,7 @@ function Image({img}) {
 
     return (
         <div className="image-container" ref={ref}>
-            <Link to= {`/item/${img.id}`}>
+            <Link to= {img.id}>
                 <img src={img.url} alt = 'Products' className="image-grid"/>
                 </Link>
           {heartIcon()}
