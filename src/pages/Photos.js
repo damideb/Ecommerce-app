@@ -1,17 +1,23 @@
 import React, {useContext, useState} from "react"
-
+import {useSearchParams,Link} from "react-router-dom"
 import Image from "../components/Image"
 import {Context} from "../Context"
 
 
 function Photos() {
-    
+    const[searchparams] = useSearchParams()
     const[startIndex, setStartIndex] = useState(0)
     const[endIndex, setEndIndex] = useState(9)
-
     const {allPhotos} = useContext(Context)
-    const imageElements = allPhotos.map((img) => (
-        <Image key={img.id} img={img} />
+
+    const typeFilter = searchparams.get('category')
+
+
+    const photosType= typeFilter? allPhotos.filter(photo=> photo.type===typeFilter
+ ): allPhotos
+
+    const imageElements = photosType.map((img) => (
+        <Image key={img.id} img={img} searchparams={searchparams}/>
     ))
 
  function next(){
@@ -32,7 +38,9 @@ function Photos() {
    
     return (
         <div>
+     
         <main className="photos">
+   
             {imageElements.slice(startIndex,endIndex)}
         </main>
         <div className="direction">

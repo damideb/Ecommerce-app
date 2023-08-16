@@ -1,5 +1,5 @@
 import React, { useContext, useState} from "react";
-import { useParams, useNavigate} from "react-router-dom";
+import { useParams, useNavigate, useLocation, Link} from "react-router-dom";
 import data from './Data'
 import {Context} from './Context'
 
@@ -12,13 +12,9 @@ function ItemDescription(){
             const {addToCart,cartItems} = useContext(Context)
                 const[quantity,setQuantity] = useState(1)
                     const navigate = useNavigate()
+                    const location=useLocation()
+  const search = (location.state && location.state.search) || ""
 
-  
-
-function handleClick(){
-        navigate('/items')
-    
-            }
 
 function viewCart(){
             navigate('/cart')
@@ -34,7 +30,6 @@ function doubleCheck(Item){
         }
         else{
             addToCart(Item)
-        
         }
     }
     return;
@@ -49,15 +44,18 @@ function sum(){
 function minus(){
     if(quantity > 1){
           setQuantity(quantity  -1)
-    
 }}
 
     return(
         <main className="singleItem">
            <img  src={singleItem.url}  alt='' className="bagItem"/>
+           <Link to={`..${search}`} 
+           relative="path">
            <p 
             className="arrow"
-            onClick={handleClick}><span> <i className="ri-arrow-go-back-line" ></i></span> Go back</p>
+          ><span> <i className="ri-arrow-go-back-line" ></i></span> Go back</p>
+           </Link>
+           
                 <span className='bagRating'> 
            {singleItem.ratings} <i className="ri-star-half-s-line"></i>
            <i className="ri-star-half-s-line"></i>

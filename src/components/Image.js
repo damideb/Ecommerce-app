@@ -5,10 +5,9 @@ import PropTypes from "prop-types"
 import useHover from "../hooks/useHover"
    
 
-function Image({img}) {
+function Image({img,searchparams}) {
     const [hovered, ref] = useHover()
     const {toggleFavorite} = useContext(Context)
-    
     function heartIcon() {
         if(img.isFavorite) {
             return <i className="ri-heart-fill favorite" onClick={() => toggleFavorite(img.id)}></i>
@@ -18,7 +17,8 @@ function Image({img}) {
 
     return (
         <div className="image-container" ref={ref}>
-            <Link to= {img.id}>
+            <Link to= {img.id}
+            state={{search:`?${searchparams.toString()}`}}>
                 <img src={img.url} alt = 'Products' className="image-grid"/>
                 </Link>
           {heartIcon()}

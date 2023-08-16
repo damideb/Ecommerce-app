@@ -6,7 +6,8 @@ const data= [
         isFavorite: false,
         price: 1900,
         ratings: 4.5,
-        quantity:1
+        quantity:1,
+        type:"bag"
 
     },
 
@@ -16,6 +17,7 @@ const data= [
         isFavorite: false,
         price: 450,
         ratings: 3.9,
+        type:"bag",
         quantity:1
 
     },
@@ -25,6 +27,7 @@ const data= [
         isFavorite: false,
         price: 5000,
         ratings: 5,
+        type:"bag",
         quantity:1
 
     },
@@ -34,6 +37,7 @@ const data= [
         isFavorite: false,
         price: 150,
         ratings:3.4,
+        type:"bag",
         quantity:1
 
     },
@@ -43,6 +47,7 @@ const data= [
         isFavorite: false,
         price: 500,
         ratings: 3.9,
+        type:"bag",
         quantity:1
 
     },
@@ -52,6 +57,7 @@ const data= [
         isFavorite: false,
         price:  900,
         ratings: 4.2,
+        type:"bag",
         quantity:1
 
     },
@@ -61,6 +67,7 @@ const data= [
         isFavorite: false,
         price: 130,
         ratings: 5,
+        type:"bag",
         quantity:1
 
     },
@@ -70,6 +77,7 @@ const data= [
         isFavorite: false,
         price: 200,
         ratings: 3,
+        type:"bag",
         quantity:1
 
     },
@@ -79,6 +87,7 @@ const data= [
         isFavorite: false,
         price: 600,
         ratings: 4.8,
+        type:"bag",
         quantity:1
 
     },
@@ -88,6 +97,7 @@ const data= [
         isFavorite: false,
         price: 120,
         ratings: 3.5,
+        type:"bag",
         quantity:1
 
     },
@@ -97,6 +107,7 @@ const data= [
         isFavorite: false,
         price: 700,
         ratings: 4.9,
+        type:"bag",
         quantity:1
 
     },
@@ -106,6 +117,7 @@ const data= [
         isFavorite: false,
         price: 220,
         ratings: 3.3,
+        type:"bag",
         quantity:1
     },
     {
@@ -114,6 +126,7 @@ const data= [
         isFavorite: false,
         price: 400,
         ratings: 4.5,
+        type:"bag",
         quantity:1
 
     },
@@ -123,6 +136,7 @@ const data= [
         isFavorite: false,
         price: 205,
         ratings: 4.2,
+        type:"bag",
         quantity:1
 
     },
@@ -132,6 +146,7 @@ const data= [
         isFavorite: false,
         price: 300,
         ratings: 4.6,
+        type: "shoes",
         quantity:1
 
     },
@@ -141,6 +156,7 @@ const data= [
         isFavorite: false,
         price: 260,
         ratings: 4,
+        type: "shoes",
         quantity:1
 
     },
@@ -150,6 +166,7 @@ const data= [
         isFavorite: false,
         price: 350,
         ratings: 3.1,
+        type: "shoes",
         quantity:1
 
     },
@@ -159,6 +176,7 @@ const data= [
         isFavorite: false,
         price: 300,
         ratings: 4.5,
+        type: "shoes",
         quantity:1
 
     },
@@ -168,6 +186,7 @@ const data= [
         isFavorite: false,
         price: 190,
         ratings: 5,
+        type: "sunglasses",
         quantity:1
 
     },
@@ -177,6 +196,7 @@ const data= [
         isFavorite: false,
         price: 500,
         ratings: 4.1,
+        type: "shoes",
         quantity:1
 
     }
