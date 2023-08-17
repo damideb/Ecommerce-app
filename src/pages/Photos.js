@@ -38,9 +38,7 @@ function Photos() {
    
     return (
         <div>
-     
         <main className="photos">
-   
             {imageElements.slice(startIndex,endIndex)}
         </main>
         <div className="direction">
@@ -54,5 +52,4 @@ function Photos() {
         </div>
     )
 }
-
 export default Photos

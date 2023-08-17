@@ -455,8 +455,9 @@ padding-bottom: 20px;
     border-right: 3.5px solid #49493C;
     width: 9px;
     height: 9px;
-    -webkit-animation: spin 1s linear infinite;
-    animation: spin 1s linear infinite;
+    -webkit-animation: spin 0.5s linear infinite;
+    animation: spin 0.5s linear infinite;
+    animation-direction:reverse ;
 }
 
 @-webkit-keyframes spin {
