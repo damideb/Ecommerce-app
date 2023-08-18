@@ -38,6 +38,16 @@ function Photos() {
    
     return (
         <div>
+              <div className="dropdown-parent">
+    <h3 className="categories">CATEGORIES</h3>
+    <ul  className="dropdown">
+    <Link to="."
+    relative="path"><li>All </li></Link>
+            <Link to="?category=bag"><li>Bags </li></Link>
+            <Link to="?category=shoes"><li>Shoes </li></Link>
+            <Link to="?category=sunglasses"> <li>Sunglasses </li></Link>
+            </ul>
+    </div>
         <main className="photos">
             {imageElements.slice(startIndex,endIndex)}
         </main>
