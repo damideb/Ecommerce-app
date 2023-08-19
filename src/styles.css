@@ -509,6 +509,10 @@ a> .first,.shop,.contact{
        font-size: 0.8rem;
        letter-spacing: 0.8px;
    }
+   ul li:hover{
+    font-size: 0.9rem;
+}
+
    
     main.photos {
         margin-top: 3%;
