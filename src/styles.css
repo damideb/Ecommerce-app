@@ -48,7 +48,7 @@ nav > h3{
 
 .head >h1{
     margin: 0;
-  width: 38%;
+  margin-right: auto;
    
 }
 
@@ -259,7 +259,7 @@ div.order-button > button:disabled {
 .cartNumber{
     position: relative;
    bottom: 0.5em;
-    right: 5.5em;
+    right: 4.5em;
     background-color: #183A1D;
     border-radius: 50%;
     width: 0.8%;
@@ -279,7 +279,7 @@ div.order-button > button:disabled {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3.5rem;
+    gap: 3rem;
    
 }
 
@@ -450,9 +450,9 @@ padding-bottom: 20px;
     border-right: 3.5px solid #49493C;
     width: 9px;
     height: 9px;
-    -webkit-animation: spin 0.5s linear infinite;
-    animation: spin 0.5s linear infinite;
-    animation-direction:reverse ;
+    -webkit-animation: spin 0.5s linear infinite reverse both;
+    animation: spin 0.5s linear infinite reverse both;
+    -ms-animation:spin 0.5s linear infinite reverse both;
 }
 
 @-webkit-keyframes spin {
@@ -489,16 +489,18 @@ a > span{
  @media screen and (max-width: 480px) {
 
 .head {
+    overflow: hidden;
     gap: 0;
     align-items: center;
 }
 a> .first,.shop,.contact{
     font-size: 0.8rem; 
+    padding: auto;
 }
 #icon{ 
-  margin-left: 0px; 
- 
-}
+    margin-left:0 ;
+  }
+
 .categories{
     margin-left: 0.9em;
    font-size: 0.8rem;
@@ -543,7 +545,7 @@ a> .first,.shop,.contact{
     }
     
     .head >h1{
-     width: 20%;
+        margin-right: 10%;
         font-size: 1.2rem;
     }
     
