@@ -3,8 +3,6 @@ import { useParams, useNavigate, useLocation, Link} from "react-router-dom";
 import data from './Data'
 import {Context} from './Context'
 
-
-
 function ItemDescription(){
 
      const{itemId} = useParams()
@@ -14,7 +12,6 @@ function ItemDescription(){
                     const navigate = useNavigate()
                     const location=useLocation()
   const search = (location.state && location.state.search) || ""
-
 
 function viewCart(){
             navigate('/cart')
@@ -35,10 +32,8 @@ function doubleCheck(Item){
     return;
     }
 
-
 function sum(){
-    setQuantity(quantity + 1)
-    
+    setQuantity(quantity + 1)   
 }
 
 function minus(){
