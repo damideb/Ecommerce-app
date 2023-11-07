@@ -6,10 +6,8 @@ const Context =React.createContext()
 
 function ContextProvider (props){
 
-const [allPhotos, setAllPhotos] = useState([])
-const[cartItems, setCartItems] = useState([])
-
-
+    const [allPhotos, setAllPhotos] = useState([])
+    const[cartItems, setCartItems] = useState([])
 
     useEffect(() => {
       let  isCurrent=true
@@ -27,38 +25,28 @@ const[cartItems, setCartItems] = useState([])
             if(photo.id === id) {
                 return {...photo, isFavorite: !photo.isFavorite}
             }
-            return photo
+        return photo
         })
-        
         setAllPhotos(updatedArr)
     }
 
     function addToCart(newItem) {
         setCartItems(prevItems => [...prevItems, newItem])
-   
     }
     
     function removeFromCart(id) {
         setCartItems(prevItems => prevItems.filter(item => item.id !== id))
-      
     }
 
     function emptyCart() {
         setCartItems([])
     }
-
-   
- 
-    
-    
-
     
     return(
-        <Context.Provider value={{allPhotos,toggleFavorite, removeFromCart,
+    <Context.Provider value={{allPhotos,toggleFavorite, removeFromCart,
         addToCart, cartItems, emptyCart}}>
-            {props.children}
-        </Context.Provider>
+        {props.children}
+    </Context.Provider>
     )
 }
-
 export {ContextProvider, Context}

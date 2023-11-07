@@ -13,26 +13,24 @@ function Image({img,searchparams}) {
             return <i className="ri-heart-fill favorite" onClick={() => toggleFavorite(img.id)}></i>
         } else if(hovered) {
             return <i className="ri-heart-line favorite" onClick={() => toggleFavorite(img.id)}></i>
-        }}
+                            }}
 
     return (
         <div className="image-container" ref={ref}>
             <Link to= {img.id}
-            state={{search:`?${searchparams.toString()}`}}>
+                state={{search:`?${searchparams.toString()}`}}>
                 <img src={img.url} alt = 'Products' className="image-grid"/>
-                </Link>
-          {heartIcon()}
-            
+            </Link>
+            {heartIcon()}
             <div className="imageText">
                 <p className='priceList'> ${img.price}</p>
-            <p className='rating'> 
-           {img.ratings} <i className="ri-star-half-fill"></i></p>
-            </div>
-            
-                
+                <p className='rating'> 
+                {img.ratings} <i className="ri-star-half-fill"></i></p>
+            </div>   
         </div>
     )
 }
+
 Image.propTypes = {
     className: PropTypes.string,
     img: PropTypes.shape({

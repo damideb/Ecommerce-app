@@ -10,13 +10,13 @@ function App() {
    
     return (
         <div >
-            <Routes >
-            <Route  path='/'element={<Layout />}>
-            <Route  index element={<Frontpage />} />
-                <Route  path="items" element={<Photos />} />
-                <Route path="items/:itemId"  element={ <ItemDescription/>} />
-                <Route path="cart"  element={  <Cart />} />
-                  </Route>
+            <Routes>
+                <Route  path='/'element={<Layout />}>
+                    <Route  index element={<Frontpage />} />
+                    <Route  path="items" element={<Photos />} />
+                    <Route path="items/:itemId"  element={ <ItemDescription/>} />
+                    <Route path="cart"  element={  <Cart />} />
+                </Route>
             </Routes>
         </div>
     )
