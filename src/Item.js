@@ -21,13 +21,13 @@ function ItemDescription(){
     function doubleCheck(Item){
         Item.quantity = quantity
         if(quantity>0){
-        if(inCart){
-            viewCart()
-                  }
-        else{
-            addToCart(Item)
+            if(inCart){
+                viewCart()
             }
-                        }
+            else{
+                addToCart(Item)
+            }
+        }
          return;
     }
 
