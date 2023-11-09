@@ -13,7 +13,7 @@ function Image({img,searchparams}) {
             return <i className="ri-heart-fill favorite" onClick={() => toggleFavorite(img.id)}></i>
         } else if(hovered) {
             return <i className="ri-heart-line favorite" onClick={() => toggleFavorite(img.id)}></i>
-                            }}
+    }}
 
     return (
         <div className="image-container" ref={ref}>
