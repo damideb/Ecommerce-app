@@ -5,7 +5,8 @@ import PropTypes from "prop-types"
 import useHover from "../hooks/useHover"
    
 
-function Image({img,searchparams}) {
+function Image({img, searchparams}) {
+   
     const [hovered, ref] = useHover()
     const {toggleFavorite} = useContext(Context)
     function heartIcon() {

@@ -45,7 +45,7 @@ function Photos() {
                  <Link to="."
                     relative="path"><li>All </li></Link>
                 </ul>
-             </div>
+            </div>
             <main className="photos">
                 {imageElements.slice(startIndex,endIndex)}
             </main>
