@@ -550,7 +550,7 @@ a> .first,.shop,.contact{
         }
         .homepage{
             flex-direction: row-reverse;
-        gap: 7em;
+        gap: 4em;
         }
 
         .imageDiv{
@@ -560,7 +560,7 @@ a> .first,.shop,.contact{
 
         .imageFlex{
             width: 100%;
-            margin-top: 13em;
+            margin-top: 11em;
         
         }
         .bodyText{
