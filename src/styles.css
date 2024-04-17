@@ -5,57 +5,52 @@
 
 html{
     box-sizing: border-box;
+    
 }
 
 body {
-    font-family: 'Oswald', sans-serif;
+    font-family: sans-serif;
     margin: 0;
+    height: 100%;
     padding: 0;
     background-color: #F5F5F5;
     overflow-x: hidden;
 }
 
 .homepage{
-font-family:Courier New;
 margin: 0;
-color: white;
+color: black;
 overflow-x: hidden;
+width: 100%;
+height: 100%;
+display: flex;
+gap: 2em;
 }
 
-.bodyText ::before{
-    content: "";
-    background-image: url(images/bag.png);
-    filter: brightness(0.5);
-    background-size: cover;
-    background-repeat: no-repeat;
+.imageDiv{
+    background-image: url(images/feet.jpg);
+    width: 50%;
+    position: fixed;
+   right: 0;
+   top: 0;
     height: 100vh;
-    background-position: center;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
     z-index: -1;
-    opacity: 0.6;
-    
 }
-nav > h3{
-    font-size: 1.5rem;
-    font-weight: lighter;
-    padding: 5px;
+
+
+nav > h2{
     cursor: pointer;
 }
 
-.head >h1{
-    margin: 0;
-  margin-right: auto;
-   
-}
 
 .buyNowText{
-    background-color: #9FA180;
+    background-color: #49493C;
     opacity: 0.8;
     }
+
     .buyNowText > i{
     color: #FEFBF6;
     margin: 0;
@@ -64,19 +59,22 @@ nav > h3{
     font-size: 11px;
     }
     
+    .imageFlex{
+        width: 50%;
+    }
     .bodyText{
-    margin:5em 0 0 24em;
-    color: #FEFBF6;
+    margin: 9em 2em 2em 2em;
+    color: var(--black);
     
     }
     .bodyText >h2{
-     margin-left:5em ;
-     font-size: 2rem;
+     font-size: 1.5rem;
     }
     .bodyText >p{
-        font-size: 20px;
-        margin-left:9em ;
-        margin-top: 2em;
+        font-size: 16px;
+        margin-top: 1em;
+        line-height: 30px;
+        padding: 1em 0;
        }
     
     .exploreButton{
@@ -84,16 +82,15 @@ nav > h3{
         color: #FEFBF6;
         font-family: Courier New;
         font-size: 17px;
-        margin:1.5em 0 0 40em;
-        width: 18%;
+        margin-left: 2em;
+        padding:1em 2em;
         height: 59px;
-        border-radius: 30px;
-        border: 0.5px  white;
+        border: 0.5px black;
         cursor: pointer;
        -webkit-box-shadow: 0px 2px 10px -3px rgba(21,6,5,1);
        -moz-box-shadow: 0px 2px 10px -3px rgba(21,6,5,1);
        box-shadow: 0px 2px 10px -3px     rgba(21,6,5,1);
-       transition: width 2s, height 4s;
+       transition: width 3s, height 5s ease-in-out;
        }
 
        .exploreButton:hover{
@@ -259,8 +256,9 @@ div.order-button > button:disabled {
 .cartNumber{
     position: relative;
    bottom: 0.5em;
-    right: 4.5em;
+    right: 6.5em;
     background-color: #183A1D;
+    color: white;
     border-radius: 50%;
     width: 0.8%;
     font-size: 8px;
@@ -268,31 +266,29 @@ div.order-button > button:disabled {
 }
 
 .head {
-    background-color: #49493C;
     height: 65px;
     width: 100%;
-    color: white;
-    margin: 0;
-    -webkit-box-shadow: 0px 2px 10px -3px rgba(21,6,5,1);
+    color: var(--black);
+    margin: 0  ;
+    z-index: 1;
+    /* -webkit-box-shadow: 0px 2px 10px -3px rgba(21,6,5,1);
     -moz-box-shadow: 0px 2px 10px -3px rgba(21,6,5,1);
-    box-shadow: 0px 2px 10px -3px     rgba(21,6,5,1);
+    box-shadow: 0px 2px 10px -3px     rgba(21,6,5,1); */
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 3rem;
+    justify-content: flex-end;
+    gap: 4rem;
    
 }
 
  a> .first,.shop,.contact{
-    font-weight: lighter;
-    font-weight: 0.2px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     padding: 20px
     
 }
 .categories{
  margin-left: 5em;
-font-size: 0.9rem;
+font-size: 0.8rem;
 cursor: pointer;
 font-weight: 0.1px;
 }
@@ -303,7 +299,7 @@ font-weight: 0.1px;
     list-style: none;
     padding-right:  5em;
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #150605;
     letter-spacing: 1px;
     transition: all;
@@ -384,6 +380,7 @@ input[type=number] {
     text-align: center;
    top: 22%;
    width: 5em;
+   padding: 0.4em;
    height: 2em;
    border: 1px solid black;
 }
@@ -470,13 +467,14 @@ a {
     text-decoration: none;
 }
 nav> a{
-    color: white;
+    color: var(--black);
 }
 
 
-a:visited { color: white; }
-a:hover { color: var(--light-blue); }
-a:active { color: var(--light-blue); }
+
+a:visited {  color: var(--black) }
+
+a:active { color: #183A1D; }
 
 a > span{
     color: #49493C;
@@ -492,13 +490,14 @@ a > span{
     overflow: hidden;
     gap: 0;
     align-items: center;
+    justify-content: center;
 }
 a> .first,.shop,.contact{
     font-size: 0.8rem; 
     padding: auto;
 }
 #icon{ 
-    margin-left:0 ;
+    margin-left:1.5em ;
   }
 
 .categories{
@@ -507,7 +506,7 @@ a> .first,.shop,.contact{
    cursor: pointer;
    }
     ul> a> li{
-       padding-right:  2.5em;
+       padding-right:  1.5em;
        font-size: 0.8rem;
        letter-spacing: 0.8px;
    }
@@ -540,13 +539,8 @@ a> .first,.shop,.contact{
         height: 80%;
     }
 
-    .head > h3{
+    .head > h2{
         font-size: 0.9rem;
-    }
-    
-    .head >h1{
-        margin-right: 10%;
-        font-size: 1.2rem;
     }
     
         .buyNowText > i{
@@ -554,29 +548,38 @@ a> .first,.shop,.contact{
         font-size: 0.7rem;
         
         }
-        
-        .bodyText{
-        margin:9em 0 0 0;
+        .homepage{
+            flex-direction: row-reverse;
+        gap: 7em;
+        }
+
+        .imageDiv{
+            width: 100%;
+            height: 40%;
+        }
+
+        .imageFlex{
+            width: 100%;
+            margin-top: 13em;
         
         }
+        .bodyText{
+        margin:9em 1em 0 2em;
+   
+        }
         .bodyText >h2{
-         margin-left:1em ;
          font-size: 1rem;
          margin-top: 4em;
         }
         .bodyText >p{
             font-size: 0.8rem;
-            margin-left:1.2em ;
             margin-top: 1.8em;
            }
         
         .exploreButton{
             font-size: 1rem;
-            margin:1.5em 0 0 7em;
-            width:50%;
             height: 50px;
-            border-radius: 25px;
-           border: 0.5px  white;
+            margin-top: 1.5em;
            }
 
     .direction{
@@ -608,8 +611,8 @@ a> .first,.shop,.contact{
   
     .priceList{
         position: relative;
-  left: 1px;
-  bottom: 10px;
+        left: 1px;
+        bottom: 10px;
        font-size:0.8rem;
        
     }
@@ -636,7 +639,8 @@ a> .first,.shop,.contact{
     
     .cartNumber{
           left: 1rem;
-          font-size: 7px;
+          font-size: 8px;
+          width: 1.5%;
       }
    
       .bagItem{
@@ -692,14 +696,12 @@ a> .first,.shop,.contact{
     @media screen and ( min-width:500px) and (max-width:768px) {
 
         .head {
-            gap: 0;
-            justify-content: space-between;
-            align-items: center;
+            gap: 1em;
         
         }
         a> .first,.shop,.contact{
             font-size: 1rem;
-            padding-left: 1.6rem;
+            padding-left: 0.7rem;
         }
         #icon{ 
            margin-left: 0em;
@@ -737,14 +739,13 @@ a> .first,.shop,.contact{
             height: 80%;
         }
     
-        .head > h3{
+        .head > h2{
             font-size: 1rem;
-            padding: 10px;
+            padding: 1px;
         }
         
-        .head >h1{
-            font-size: 1.2rem;
-            padding-left: 5px;
+        .imageFlex{
+           padding: 1em; 
         }
         
             .buyNowText > i{
@@ -752,25 +753,18 @@ a> .first,.shop,.contact{
             font-size: 0.7rem;
             
             }
-            
-            .bodyText{
-            margin:13rem 4rem  0;
-            
-            }
+
             .bodyText >h2{
-             margin-left:1em ;
-             font-size: 1.5rem;
+             font-size: 1.1rem;
              margin-top: 4em;
             }
             .bodyText >p{
                 font-size: 0.9rem;
-                margin-left:1.5em ;
-                margin-top: 1.9em;
+                margin-top: 1.4em;
                }
             
             .exploreButton{
                 font-size: 1rem;
-                margin:2rem 0 0 11rem;
                 width:30%;
                 height: 50px;
                }
@@ -829,7 +823,7 @@ a> .first,.shop,.contact{
         }
        
         .cartNumber{
-              right: 3.5em;
+              right: 0.5em;
               font-size: 8px;
           }
        
@@ -879,14 +873,13 @@ a> .first,.shop,.contact{
  @media screen and ( min-width:769px) and (max-width:1024px) {
   
     .head {
-        gap: 0;
-        justify-content: space-between;
+        gap: 1.5em;
         align-items: center;
     
     }
     a> .first,.shop,.contact{
         font-size: 1.2rem;
-        padding-left: 1.6rem;
+        padding-left: 1rem;
     }
     #icon{ 
        margin-left: 0em;
@@ -905,39 +898,32 @@ a> .first,.shop,.contact{
         height: 80%;
     }
 
-    .head > h3{
+    .head > h2{
         font-size: 1rem;
         padding: 10px;
     }
     
-    .head >h1{
-        font-size: 1.2rem;
-        padding-left: 5px;
-    }
     
         .buyNowText > i{
         margin-left: 20rem;
         
         }
-        
+
         .bodyText{
-        margin:10rem 4rem  0;
-        
+            margin-top: 10em;
         }
+
         .bodyText >h2{
-         margin-left:5em ;
          font-size: 1.5rem;
          margin-top: 4em;
         }
         .bodyText >p{
             font-size: 0.9rem;
-            margin-left:1.5em ;
             margin-top: 1.9em;
            }
         
         .exploreButton{
             font-size: 1rem;
-            margin:1.9rem 0 0 17rem;
             width:27%;
             height: 50px;
            }
@@ -984,7 +970,7 @@ a> .first,.shop,.contact{
     }
     
     .cartNumber{
-          right: 14.7em;
+          right: 1em;
           font-size: 8px;
       }
    

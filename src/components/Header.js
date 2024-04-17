@@ -8,13 +8,12 @@ function Header() {
     return (
         <header>
             <nav className="head">
-                <h1>Styless</h1>
-                <Link to='/'> <h3 className="first">HOME</h3> </Link>
-                <Link to='/items'> <h3 className="shop">SHOP</h3> </Link> 
-                <Link to='#'> <h3 className="contact">CONTACT</h3> </Link>
+                <Link to='/'> <h2 className="first">HOME</h2> </Link>
+                <Link to='/items'> <h2 className="shop">SHOP</h2> </Link> 
+                <Link to='#'> <h2 className="contact">CONTACT</h2> </Link>
                 <Link to="/cart">  <i id="icon" className={`${cartClassName} ri-fw ri-2x`}></i> </Link><small className="cartNumber">{cartItems.length}</small>
             </nav>
-            <div className="buyNowText"><i >buy now and get 30% off your next purchase!!!</i></div>
+
         </header>
     )
 }

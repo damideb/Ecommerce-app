@@ -36,6 +36,7 @@ function Photos() {
    
     return (
         <div>
+            <div className="buyNowText"><i >buy now and get 30% off your next purchase!!!</i></div>
             <div className="dropdown-parent">
                 <h4 className="categories">CATEGORIES</h4>
                 <ul  className="dropdown">

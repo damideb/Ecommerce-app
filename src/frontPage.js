@@ -11,13 +11,17 @@ function Frontpage(){
     return(
         <div>
             <div className="homepage">
+                <div className='imageFlex'>
                 <div className="bodyText" >
                     <h2>Made with love.Designed just for YOU</h2>
-                    <p>finding the perfect accessories to match your outfit? try us out and get product shipped right to your door</p>
+                    <p>Finding the perfect accessories to match your outfit? try us out and get product shipped right to your door</p>
                 </div> 
             <button className="exploreButton"
                 onClick={handleClick}
-            >Explore Our Range</button>
+            >Explore</button>
+            </div>
+            <div className='imageDiv'>
+            </div>
             </div>
         </div>
     )
