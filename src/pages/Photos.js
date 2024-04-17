@@ -27,7 +27,7 @@ function Photos() {
     }
 
     function previous(){
-        if( startIndex > 0 ){
+        if(startIndex > 0 ){
         window.scrollTo(0,0)
         setStartIndex(prevIndex=>prevIndex- 9)
         setEndIndex(prevIndex=>prevIndex - 9)
