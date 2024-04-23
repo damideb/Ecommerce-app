@@ -6,8 +6,12 @@ const Context =React.createContext()
 
 function ContextProvider (props){
 
+    const savedCartItems = JSON.parse(localStorage.getItem('cart')) || []
+    console.log(savedCartItems)
+
     const [allPhotos, setAllPhotos] = useState([])
-    const[cartItems, setCartItems] = useState([])
+    const[cartItems, setCartItems] = useState(savedCartItems)
+
 
     useEffect(() => {
       let  isCurrent=true
@@ -36,10 +40,14 @@ function ContextProvider (props){
     
     function removeFromCart(id) {
         setCartItems(prevItems => prevItems.filter(item => item.id !== id))
+        const removeCart = cartItems.filter(item=> item.id !==id)
+        localStorage.setItem('cart', JSON.stringify(removeCart))
+        
     }
 
     function emptyCart() {
         setCartItems([])
+        localStorage.removeItem('cart')
     }
     
     return(

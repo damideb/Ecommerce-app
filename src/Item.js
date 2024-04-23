@@ -1,9 +1,12 @@
-import React, { useContext, useState} from "react";
+import React, { useContext, useState, useEffect} from "react";
 import { useParams, useNavigate, useLocation, Link} from "react-router-dom";
 import data from './Data'
 import {Context} from './Context'
+import FlyingButton from 'react-flying-item'
 
 function ItemDescription(){
+
+    const [loading, setLoading] = useState(false)
     const{itemId} = useParams()
     const singleItem = data.find(item=> item.id===itemId)
     const {addToCart,cartItems} = useContext(Context)
@@ -25,11 +28,20 @@ function ItemDescription(){
                 viewCart()
             }
             else{
-                addToCart(Item)
+                setLoading(true)
+                setTimeout(()=>{
+                    addToCart(Item)
+                    setLoading(false)
+                   },1000) 
+                
             }
         }
          return;
     }
+
+    useEffect(()=>{
+        localStorage.setItem('cart', JSON.stringify(cartItems))
+    }, [cartItems])
 
     function sum(){
         setQuantity(quantity + 1)   
@@ -73,10 +85,16 @@ function ItemDescription(){
                 <button className="cartButton"
                         onClick={()=>doubleCheck(singleItem)}
                 >  View In Cart </button>
-              :  <button className="cartButton" id="addItemButton"
-                            disabled={quantity < 1}
-                            onClick={()=>doubleCheck(singleItem)}
-                  >Add To Cart </button> 
+              :  <div onClick={()=>doubleCheck(singleItem)}>
+                    <FlyingButton 
+                            src={singleItem.url}
+                            targetLeft={'95%'}
+                            targetTop={'5%'}
+                            > 
+                            <button className="cartButton" id="addItemButton"  
+                            disabled={quantity < 1 || loading}>{loading? 'Adding...': "Add To Cart"}  </button>
+                    </FlyingButton> 
+                </div>
             }
         </main>
     )
