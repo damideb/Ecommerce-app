@@ -93,11 +93,6 @@ nav > h2{
        transition: width 3s, height 5s ease-in-out;
        }
 
-       .exploreButton:hover{
-        width: 20%; 
-        height: 68px;   
-       }
-
 main.photos {
     margin-top: 1%;
     margin-left: 5%;
@@ -254,13 +249,13 @@ div.order-button > button:disabled {
     cursor: pointer;
 }
 .cartNumber{
-    position: relative;
-   bottom: 0.5em;
-    right: 6.5em;
+    position: absolute;
+   bottom: 1.5em;
+    right: 1.5em;
     background-color: #183A1D;
     color: white;
     border-radius: 50%;
-    width: 0.8%;
+    width: 20%;
     font-size: 8px;
     text-align:   center;
 }
@@ -319,7 +314,6 @@ ul li:hover{
 }
 
 #icon{ 
-  margin-right:-2rem ;
   position: relative;
   
  
@@ -490,15 +484,14 @@ a > span{
 .head {
     overflow: hidden;
     gap: 0;
-    align-items: center;
-    justify-content: center;
+    
 }
 a> .first,.shop,.contact{
     font-size: 0.8rem; 
     padding: auto;
 }
 #icon{ 
-    margin-left:1.5em ;
+
   }
 
 .categories{
@@ -641,7 +634,7 @@ a> .first,.shop,.contact{
     .cartNumber{
           left: 1rem;
           font-size: 8px;
-          width: 1.5%;
+          width: 10%;
       }
    
       .bagItem{
@@ -660,7 +653,7 @@ a> .first,.shop,.contact{
     
     .arrow{
         font-size: 0.7em;
-        width: 13%;
+        width: 15%;
         height: 2.5%;
         top: 5.5rem;
         left: 1rem;
